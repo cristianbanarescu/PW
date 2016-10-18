@@ -9,6 +9,7 @@ function openModal(nr) {
 function closeModal(nr) {
 	//var x = document.getElementsByClassName('modal');
 	$(".modal")[nr].style.display="none";
+  slideIndex = 1;
 }
 
 function plusSlides(n, modal_nr) {
