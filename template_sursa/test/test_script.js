@@ -1,28 +1,29 @@
+var slideIndex = 1;
+
 function openModal(nr) {
-	var x= document.getElementsByClassName('modal');
-	x[nr].style.display="block";
+	//var x = document.getElementsByClassName('modal');
+	$(".modal")[nr].style.display="block";
+  showSlides(slideIndex, nr);
   }
 
 function closeModal(nr) {
-	var x= document.getElementsByClassName('modal');
-	x[nr].style.display="none";
+	//var x = document.getElementsByClassName('modal');
+	$(".modal")[nr].style.display="none";
 }
 
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(n, modal_nr) {
+  showSlides(slideIndex += n, modal_nr);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide(n, modal_nr) {
+  showSlides(slideIndex = n, modal_nr);
 }
 
-function showSlides(n) {
+function showSlides(n, modal_nr) {
   var i;
-  var classes = $(".modal");
-  var slides = classes.first().find(".mySlides");
+  var classes = $(".modal").eq(modal_nr);
+  var slides = classes.find(".mySlides");
+
   var dots = document.getElementsByClassName("demo");
   var captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
