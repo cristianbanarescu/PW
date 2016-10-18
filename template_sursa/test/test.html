@@ -7,31 +7,31 @@
 <h2 style="text-align:center">Lightbox</h2>
 	
 <div class="row">
-  <div class="column" onclick="openModalRM()">
+  <div class="column" onclick="openModal()">
     <img src="../images/realmadrid.jpg" style="width:100%" >
   </div>
-  <div class="column" onclick="openModalB()">
+  <div class="column" onclick="openModal()">
     <img src="../images/barcelona.jpg" style="width:100%" >
   </div>
-  <div class="column" onclick="openModalMU()">
+  <div class="column" onclick="openModal()">
     <img src="../images/manutd.jpg" style="width:100%" >
   </div>
   
   
 
-<div id="myModalRM" class="modal">
-  <span class="close cursor" onclick="closeModalRM()">&times;</span>
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
   <div class="modal-content">
 
-    <div class="mySlidesRM">
+    <div class="mySlides">
       <img src="../images/ronaldo.jpg" style="width:100%">
     </div>
 
-    <div class="mySlidesRM">
+    <div class="mySlides">
       <img src="../images/messi.jpg" style="width:100%">
     </div>
 
-    <div class="mySlidesRM">
+    <div class="mySlides">
       <img src="../images/zlatan.jpg" style="width:100%">
     </div>
     
@@ -57,81 +57,6 @@
 </div>
 
 
-<div id="myModalB" class="modal">
-  <span class="close cursor" onclick="closeModalB()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlidesB">
-      <img src="../images/ronaldo.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlidesB">
-      <img src="../images/messi.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlidesB">
-      <img src="../images/zlatan.jpg" style="width:100%">
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-
-    <div class="column">
-      <img class="demo cursor" src="../images/ronaldo.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="../images/messi.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="../images/zlatan.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-    </div>
-	
-  </div>
-</div>
-
-
-
-<div id="myModalMU" class="modal">
-  <span class="close cursor" onclick="closeModalMU()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlidesMU">
-      <img src="../images/ronaldo.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlidesMU">
-      <img src="../images/messi.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlidesMU">
-      <img src="../images/zlatan.jpg" style="width:100%">
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-
-    <div class="column">
-      <img class="demo cursor" src="../images/ronaldo.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="../images/messi.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="../images/zlatan.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-    </div>
-	
-  </div>
-</div>
 	<link rel="stylesheet" type="text/css" href="style_test.css" />
 	<script type="text/javascript" src="test_script.js"></script> 
 </body>
