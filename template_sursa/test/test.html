@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
 <body>
 
 <h2 style="text-align:center">Lightbox</h2>
@@ -20,9 +22,8 @@
   
 
 <div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal(0)">&times;</span>
   <div class="modal-content">
-
+    <span class="close cursor" onclick="closeModal(0)">&times;</span>
     <div class="mySlides">
       <img src="../images/ronaldo.jpg" style="width:100%">
     </div>
@@ -44,13 +45,13 @@
 
 
     <div class="column">
-      <img class="demo cursor" src="../images/ronaldo.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+      <img class="demo cursor" src="../images/ronaldo.jpg" style="width:100%" onclick="currentSlide(1)" alt="ronaldo">
     </div>
     <div class="column">
-      <img class="demo cursor" src="../images/messi.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+      <img class="demo cursor" src="../images/messi.jpg" style="width:100%" onclick="currentSlide(2)" alt="messi">
     </div>
     <div class="column">
-      <img class="demo cursor" src="../images/zlatan.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      <img class="demo cursor" src="../images/zlatan.jpg" style="width:100%" onclick="currentSlide(3)" alt="zoltan">
     </div>
 	
   </div>
