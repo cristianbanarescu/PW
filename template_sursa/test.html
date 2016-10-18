@@ -146,20 +146,28 @@ img.hover-shadow {
 
 <h2 style="text-align:center">Lightbox</h2>
 
-<div class="row">
+<select id = "name" onchange="openModal()">
+  <option disabled selected value> -- select an option -- </option>
+  <option value="real madrid">real madrid</option>
+  <option value="barcelona">barcelona</option>
+  <option value="man utd">man utd</option>
+ 
+</select> 
+<br></br>
+
+	
+<!--<div class="row">
   <div class="column">
-    <img src="images/ronaldo.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-  </div>
-  <!--<div class="column">
-    <img src="img_fjords.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    <img src="images/realmadrid.jpg" style="width:100%" >
   </div>
   <div class="column">
-    <img src="img_mountains.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    <img src="images/barcelona.jpg" style="width:100%" >
   </div>
   <div class="column">
-    <img src="img_lights.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    <img src="images/manutd.jpg" style="width:100%" >
   </div>
   -->
+  
 
 <div id="myModal" class="modal">
   <span class="close cursor" onclick="closeModal()">&times;</span>
@@ -199,11 +207,10 @@ img.hover-shadow {
     <div class="column">
       <img class="demo cursor" src="images/zlatan.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
     </div>
-    <div class="column">
-      <img class="demo cursor" src="img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
+    
   </div>
 </div>
+
 
 <script>
 function openModal() {
