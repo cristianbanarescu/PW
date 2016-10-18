@@ -1,9 +1,11 @@
-function openModal() {
-  document.getElementById('myModal').style.display = "block";
+function openModal(nr) {
+	var x= document.getElementsByClassName('modal');
+	x[nr].style.display="block";
   }
 
-function closeModal() {
-  document.getElementById('myModal').style.display = "none";
+function closeModal(nr) {
+	var x= document.getElementsByClassName('modal');
+	x[nr].style.display="none";
 }
 
 var slideIndex = 1;
@@ -34,3 +36,4 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
