@@ -5,10 +5,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 
 <title>Jucatori Fotbal</title>
+<link rel="stylesheet" type="text/css" href="../style_stats.css" />
+<script type="text/javascript" src="../scripts/stats_script.js"></script>
 
-<link rel="stylesheet" type="text/css" href="../style.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 </head>
+
 <body>
 <div id="maincontainer">
 
@@ -30,6 +33,7 @@ Cand se da click pe acest drop list se vor afisa automat statistici despre jucat
 </p>
 
 <p><b>Buton</b> pentru a compara 2 jucatori in functie de evolutii</p>
+
 </div>
 
 </div>
@@ -37,18 +41,7 @@ Cand se da click pe acest drop list se vor afisa automat statistici despre jucat
 
 <div id="imagecolumn">
 
-<!--<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
--->
+
 </div>
 
 <div id="rightcolumnTitle">
@@ -67,6 +60,8 @@ Meniu
 </ul>
 
 </div>
+
+
 
 <p>
 <strong>Last match:</strong><br />
@@ -102,6 +97,148 @@ Team - Your Team
 
 </div>
 
+<div class="row">
+  <div class="column" onclick="openModal(0)">
+    <img src="../images/realmadrid.jpg" style="width:80%" >
+  </div>
+  <div class="column" onclick="openModal(1)">
+    <img src="../images/barcelona.jpg" style="width:80%" >
+  </div>
+  <div class="column" onclick="openModal(2)">
+    <img src="../images/manutd.jpg" style="width:80%" >
+  </div>
+  
+  
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close cursor" onclick="closeModal(0)">&times;</span>
+    <div class="mySlides">
+      <img src="../images/ronaldo.jpg" style="width:100%">
+      <div class="caption-container">
+      <p>ronaldo</p>
+    </div>
+    </div>
+
+    <div class="mySlides">
+      <img src="../images/messi.jpg" style="width:100%">
+      <div class="caption-container">
+      <p>messi</p>
+    </div>
+    </div>
+
+    <div class="mySlides">
+      <img src="../images/zlatan.jpg" style="width:100%">
+      <div class="caption-container">
+      <p>zoltan</p>
+    </div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+
+
+    <div class="column">
+      <img class="demo cursor" src="../images/ronaldo.jpg" style="width:100%" onclick="currentSlide(1, 0)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../images/messi.jpg" style="width:100%" onclick="currentSlide(2, 0)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../images/zlatan.jpg" style="width:100%" onclick="currentSlide(3, 0)">
+    </div>
+	
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal(1)">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <img src="../images/ronaldo.jpg" style="width:100%">
+      <div class="caption-container">
+      <p>ronaldo</p>
+    </div>
+    </div>
+
+    <div class="mySlides">
+      <img src="../images/messi.jpg" style="width:100%">
+      <div class="caption-container">
+      <p>messi</p>
+    </div>
+    </div>
+
+    <div class="mySlides">
+      <img src="../images/zlatan.jpg" style="width:100%">
+     <div class="caption-container">
+      <p>zoltan</p>
+    </div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+
+    <div class="column">
+      <img class="demo cursor" src="../images/ronaldo.jpg" style="width:100%" onclick="currentSlide(2, 1)">
+    </div>
+    
+    <div class="column">
+      <img class="demo cursor" src="../images/messi.jpg" style="width:100%" onclick="currentSlide(1, 1)" >
+    </div>
+    
+    <div class="column">
+      <img class="demo cursor" src="../images/zlatan.jpg" style="width:100%" onclick="currentSlide(3, 1)">
+    </div>
+	
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal(2)">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <img src="../images/ronaldo.jpg" style="width:100%">
+      <div class="caption-container">
+      <p>ronaldo</p>
+    </div>
+    </div>
+
+    <div class="mySlides">
+      <img src="../images/messi.jpg" style="width:100%">
+      <div class="caption-container">
+      <p>messi</p>
+    </div>
+    </div>
+
+    <div class="mySlides">
+      <img src="../images/zlatan.jpg" style="width:100%">
+      <div class="caption-container">
+      <p>zoltan</p>
+    </div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="../images/ronaldo.jpg" style="width:100%" onclick="currentSlide(1, 2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../images/messi.jpg" style="width:100%" onclick="currentSlide(2, 2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../images/zlatan.jpg" style="width:100%" onclick="currentSlide(3, 2)">
+    </div>
+	
+  </div>
+</div>
 <div id="push"></div>
 
 </div>
