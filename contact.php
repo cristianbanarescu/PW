@@ -16,9 +16,13 @@
 
 <div id="contentcolumn">
 
+<div class=language_buttons>
+    <button class ="buttons" id="button_en" style="margin-left: 37px;" onclick="location.href='index_PHP.php'"><img id="image" src="img/england.jpg"> </button>
+    <button class ="buttons" id="button_ro" onclick="location.href='ro.php'"><img id="image" src="img/romania.png"> </button>
+  </div>
+
 <div id="header">
-<h1>Contact</h1>
-<span>Inceputuri...</span>
+
 </div>
 
 
@@ -38,7 +42,8 @@
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
-        height: 100%;
+        height: 53%;
+        width:99%;
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {

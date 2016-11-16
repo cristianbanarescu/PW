@@ -213,3 +213,23 @@ li.team { background-color: #fff; width: 135px; }
 li.pts { background-color: #fff; width: 25px; text-align: center; }
 li.own { background-color: #d6ebcc; color: #666; }
 
+.login_links{
+	width: 930px;
+	position: absolute;
+	 text-align: right;
+}
+.buttons{
+	height: 44px;
+	width: 50px;
+	padding:0 0 0 0;
+	border: none;
+}
+
+.buttons #button_en{
+	margin-left: 36px;
+}
+
+.buttons #image {
+	height: 44px;
+	width: 50px;
+}

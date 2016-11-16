@@ -19,9 +19,13 @@
 
 <div id="contentcolumn">
 
+<div class=language_buttons>
+    <button class ="buttons" id="button_en" style="margin-left: 37px;" onclick="location.href='index_PHP.php'"><img id="image" src="img/england.jpg"> </button>
+    <button class ="buttons" id="button_ro" onclick="location.href='ro.php'"><img id="image" src="img/romania.png"> </button>
+  </div>
+
 <div id="header">
-<h1>Stats</h1>
-<span>Inceputuri...</span>
+
 </div>
 
 <h1>Your Club</h1>
@@ -101,7 +105,7 @@ Team - Your Team
 
 <div class="row">
   <div class="column" onclick="openModal(0)">
-    <img src="/img/realmadrid.jpg" style="width:20%" >
+    <img src="img/realmadrid.jpg" style="width:20%" >
   </div>
   <div class="column" onclick="openModal(1)">
     <img src="img/barcelona.jpg" style="width:20%" >
@@ -110,7 +114,7 @@ Team - Your Team
 
   
   <div class="column" onclick="openModal(2)">
-    <img src="/img/manutd.jpg" style="width:20%" >
+    <img src="img/manutd.jpg" style="width:20%" >
   </div>
   
 

@@ -53,29 +53,7 @@ mysqli_close($link);
 	
 
 
-<style>
-.login_links{
-	width: 930px;
-	position: absolute;
-	 text-align: right;
-}
-.buttons{
-	height: 44px;
-	width: 50px;
-	padding:0 0 0 0;
-	border: none;
-}
 
-.buttons #button_en{
-	margin-left: 36px;
-}
-
-.buttons #image {
-	height: 44px;
-	width: 50px;
-}
-
-</style>
 
 
 
@@ -85,7 +63,7 @@ mysqli_close($link);
 
 <div class=language_buttons>
 		<button class ="buttons" id="button_en" style="margin-left: 37px;" onclick="location.href='index_PHP.php'"><img id="image" src="img/england.jpg"> </button>
-		<button class ="buttons" id="button_ro" onclick="location.href='index_PHP.php'"><img id="image" src="img/romania.png"> </button>
+		<button class ="buttons" id="button_ro" onclick="location.href='ro.php'"><img id="image" src="img/romania.png"> </button>
 	</div>
 
 <div id="header">
