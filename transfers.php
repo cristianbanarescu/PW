@@ -22,10 +22,55 @@
 	</div>
 
 <div id="header">
-
+</br>
+<h1>Line-up echipa</h1>
 </div>
 
-<h1>Your Club</h1>
+
+
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Sortable - Connect lists</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+  
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#sortable1, #sortable2" ).sortable({
+      connectWith: ".connectedSortable"
+    }).disableSelection();
+  } );
+  </script>
+
+  <h5 class="primul11">Primul 11 al echipei	&emsp; &emsp; &emsp; &emsp; &emsp; Rezervele</h5>
+
+  <ul id="sortable1" class="connectedSortable">
+  <li class="ui-state-default">Item 1</li>
+  <li class="ui-state-default">Item 2</li>
+  <li class="ui-state-default">Item 3</li>
+  <li class="ui-state-default">Item 4</li>
+  <li class="ui-state-default">Item 5</li>
+  <li class="ui-state-default">Item 6</li>
+</ul>
+ 
+<!--<h5 class="rezerve">Rezervele echipei</h5>
+-->
+<ul id="sortable2" class="connectedSortable">
+  <li class="ui-state-highlight">Item 1</li>
+  <li class="ui-state-highlight">Item 2</li>
+  <li class="ui-state-highlight">Item 3</li>
+  <li class="ui-state-highlight">Item 4</li>
+  <li class="ui-state-highlight">Item 5</li>
+  <li class="ui-state-highlight">Item 6</li>
+</ul>
+ 
+ 
+
+
 <!--
 <p>text1</p>
 
@@ -128,6 +173,30 @@ Team - Your Team
 Lorem ipsum dolor sit amet,<br />
 consectetuer adipiscing elit.
 </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+ 
+</head>
+<body>
+ 
 
 </body>
 </html>

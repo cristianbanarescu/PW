@@ -74,7 +74,7 @@ mysqli_close($link);
 
 
 
-<p>Pe pagina aceasta se vor afisa urmatoarele meciuri + orele de start + un countdown pana la inceputul meciului</p>
+<p>Pe pagina aceasta se vor afisa ............................................urmatoarele meciuri + orele de start + un countdown pana la inceputul meciului</p>
 
 <div class="blockquoteTitle">
 <h4>Blockquote</h4>

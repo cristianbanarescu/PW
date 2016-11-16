@@ -24,28 +24,50 @@
 
 </div>
 
+<textarea id="textarea1" diasbled>
+At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+</textarea>
 
+</br>
+</br>
+</br>
+
+<textarea id="textarea3" diasbled>
+At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+</textarea>
+
+</br>
+</br>
+</br>
+
+<textarea id="textarea2" diasbled>
+At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+</textarea>
+
+</br>
+</br>
+</br>
+
+
+
+<textarea id="textarea4" diasbled>
+At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+</textarea>
+
+</br>
+</br>
+</br>
+
+	<div id="paragrafe">
+	<p>xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxdddddddddddddddddddddddddddddddddxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+
+	</div>
 
 </div>
-
 </div>
 <div id="rightcolumn">
 
-<div id="imagecolumn">
 
-<!--<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
--->
-</div>
 
 <div id="rightcolumnTitle">
 Meniu
