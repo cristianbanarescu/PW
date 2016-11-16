@@ -46,16 +46,22 @@ mysqli_close($link);
 
 
 <div id="maincontainer">
+	<div class="login_links">
+		<a href="register.php">Inregistrare</a>
+		<a href="login.php">Autentificare</a>
+	</div>
+	<div class=language_buttons>
+		<button class ="buttons" id="button_en" style="margin-left: 100px;" onclick="location.href='index_site2.php'"><img id="image" src="img/england.jpg"> </button>
+		<button class ="buttons" id="button_ro" onclick="location.href='index_site2.php'"><img id="image" src="img/romania.png"> </button>
+	</div>
 
-<button class ="buttons" id="button_en" style="margin-left: 100px;" onclick="location.href='index_site2.php'"><img id="image" src="img/england.jpg"> </button>
-<button class ="buttons" id="button_ro" onclick="location.href='index_site2.php'"><img id="image" src="img/romania.png"> </button>
 
-<div class="login_links">
-	<a href="register.php">Inregistrare</a>
-	<a href="login.php">Autentificare</a>
-</div>
 <style>
-
+.login_links{
+	width: 930px;
+	position: absolute;
+	 text-align: right;
+}
 .buttons{
 	height: 44px;
 	width: 50px;
