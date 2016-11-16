@@ -6,7 +6,7 @@
 
 <title>Jucatori Fotbal</title>
 
-<link rel="stylesheet" type="text/css" href="../style.css" />
+<link rel="stylesheet" type="text/css" href="style.css" />
 
 </head>
 <body>
@@ -17,7 +17,7 @@
 <div id="contentcolumn">
 
 <div id="header">
-<h1>Contact</h1>
+<h1>Transfers</h1>
 <span>Inceputuri...</span>
 </div>
 
@@ -71,12 +71,12 @@ Meniu
 <div id="menu">
 
 <ul>
-<li><a href="../index.html">Home</a></li>
-<li><a href="about_us.html">About Us</a></li>
-<li><a href="stats.html">Stats</a></li>
-<li><a href="transfers.html">Transfers</a></li>
-<li><a href="bets.html">Bets</a></li>
-<li><a href="contact.html">Contact</a></li>
+<li><?php echo "<a href='index_site2.php'>Home</a>";?></li>
+<li><?php echo "<a href='about_us.php'>About Us</a>";?></li>
+<li><?php echo "<a href='stats.php'>Stats</a>";?></li>
+<li><?php echo "<a href='transfers.php'>Transfers</a>";?></li>
+<li><?php echo "<a href='bets.php'>Bets</a>";?></li>
+<li><?php echo "<a href='contact.php'>Contact</a>";?></li>
 </ul>
 
 </div>

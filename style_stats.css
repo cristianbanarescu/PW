@@ -11,13 +11,13 @@ html, body {
 }
 
 body {
-  background: #fff url(images/bg.png) repeat-y center center;
+  background: #fff url(img/bg.png) repeat-y center center;
   margin:0;
   padding:0;
 }
 
 #maincontainer{
-  background: url(images/bg_maincontainer.jpg) no-repeat 0% 0%;
+  background: url(img/bg_maincontainer.jpg) no-repeat 0% 0%;
   width: 960px;
   min-height: 100%;
   height: auto !important;
@@ -84,14 +84,14 @@ body {
 #menu li a, #menu li a:link, #menu li a:visited {
   display: block;
   width: 184px;
-  background: url(images/arrowOFF.png) no-repeat 0% 3px;
+  background: url(img/arrowOFF.png) no-repeat 0% 3px;
   color: #fff;
   text-transform: uppercase;
   padding: 3px 0 10px 26px;
 }
 
 #menu li a:hover {
-  background: url(images/arrowON.png) no-repeat 0% 3px;
+  background: url(img/arrowON.png) no-repeat 0% 3px;
   color: #ffff66;
   text-decoration: none;
 }
@@ -101,7 +101,7 @@ body {
 }
 
 #footer {
-  background: #fff url(images/bg_footer.png) no-repeat 0% 0%;
+  background: #fff url(img/bg_footer.png) no-repeat 0% 0%;
   clear: both;
   height: 90px;
   width: 945px;
@@ -183,7 +183,7 @@ a:hover {
 }
 
 .blockquoteTitle {
-  background: url(images/blockquote_title.gif) no-repeat 0% 0%;
+  background: url(img/blockquote_title.gif) no-repeat 0% 0%;
   height: 30px;
 }
 
@@ -195,7 +195,7 @@ a:hover {
 }
 
 blockquote {
-  background: url(images/blockquote_bottom.png) no-repeat left bottom;
+  background: url(img/blockquote_bottom.png) no-repeat left bottom;
   border-left: 5px solid #329900;
   padding: 5px 10px;
   margin-bottom: 16px;
@@ -291,11 +291,11 @@ body {
 .prev,
 .next {
   cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
+  position: absolute;  
+  top: 36%;
+  max-width: 100%;
   padding: 16px;
-  margin-top: -50px;
+  margin-left: -500px;
   color: white;
   font-weight: bold;
   font-size: 20px;

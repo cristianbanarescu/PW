@@ -2,6 +2,7 @@
 
 <head>
 
+
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 
 <title>Jucatori Fotbal</title>
@@ -12,21 +13,29 @@
 <body>
 <div id="maincontainer">
 
+
+<button onclick="location.href='index_site2.php'">
+     EN</button> 
+<button onclick="location.href='ro.php'">
+     RO</button>
+
+
+
 <div id="contentwrapper">
 
 <div id="contentcolumn">
 
 <div id="header">
-<h1>Bets</h1>
+<h1>Acasa</h1>
 <span>Inceputuri...</span>
 </div>
-<!--
-<h1>Your Club</h1>
 
-<p>text1</p>
+<h1>Clubul tau</h1>
+
+<p>Pe pagina aceasta se vor afisa urmatoarele meciuri + orele de start + un countdown pana la inceputul meciului</p>
 
 <div class="blockquoteTitle">
-<h4>Blockquote</h4>
+<h4>bloc citat</h4>
 </div>
 
 <blockquote>
@@ -35,14 +44,14 @@
 </blockquote>
 
 <!--<p><a href="#sitename">Read more...</a></p>
-
+-->
 <h2>Headline</h2>
 
 <p>text3</p>
 
 <h3>Headline</h3>
 <p>text4</p>
--->
+
 </div>
 
 </div>
@@ -71,42 +80,42 @@ Meniu
 <div id="menu">
 
 <ul>
-<li><a href="../index.html">Home</a></li>
-<li><a href="about_us.html">About Us</a></li>
-<li><a href="stats.html">Stats</a></li>
-<li><a href="transfers.html">Transfers</a></li>
-<li><a href="bets.html">Bets</a></li>
-<li><a href="contact.html">Contact</a></li>
+<li><?php echo "<a href='index_site2.php'>Home</a>";?></li>
+<li><?php echo "<a href='about_us.php'>About Us</a>";?></li>
+<li><?php echo "<a href='stats.php'>Stats</a>";?></li>
+<li><?php echo "<a href='transfers.php'>Transfers</a>";?></li>
+<li><?php echo "<a href='bets.php'>Bets</a>";?></li>
+<li><?php echo "<a href='contact.php'>Contact</a>";?></li>
 </ul>
 
 </div>
 
 <p>
-<strong>Last match:</strong><br />
-Your Team - Team 2:0
+<strong>Ultimul meci:</strong><br />
+gazde - oaspeti 2:0
 </p>
 
 <p>
-<strong>Next match:</strong><br />
-Team - Your Team
+<strong>Urmatorul meci:</strong><br />
+gazde - oaspeti
 </p>
 
 <ul id="table">
-<li class="head1">League</li>
-<li class="pos head2">Pos</li>
-<li class="team head2">Team</li>
-<li class="pts head2">Pts</li>
+<li class="head1">Liga</li>
+<li class="pos head2">Poz</li>
+<li class="team head2">Echipa</li>
+<li class="pts head2">Pct</li>
 <li class="pos">1.</li>
-<li class="team">Team 1</li>
+<li class="team">echipa 1</li>
 <li class="pts">9</li>
 <li class="pos own">2.</li>
-<li class="team own">Your Team</li>
+<li class="team own">echipa ta</li>
 <li class="pts own">6</li>
 <li class="pos">3.</li>
-<li class="team">Team 3</li>
+<li class="team">echipa 3</li>
 <li class="pts">1</li>
 <li class="pos">4.</li>
-<li class="team">Team 4</li>
+<li class="team">echipa 4</li>
 <li class="pts">1</li>
 
 </ul>
@@ -127,3 +136,4 @@ consectetuer adipiscing elit.
 
 </body>
 </html>
+
