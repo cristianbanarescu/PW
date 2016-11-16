@@ -71,7 +71,7 @@ Meniu
 <div id="menu">
 
 <ul>
-<li><?php echo "<a href='index_site2.php'>Home</a>";?></li>
+<li><?php echo "<a href='index_PHP.php'>Home</a>";?></li>
 <li><?php echo "<a href='about_us.php'>About Us</a>";?></li>
 <li><?php echo "<a href='stats.php'>Stats</a>";?></li>
 <li><?php echo "<a href='transfers.php'>Transfers</a>";?></li>
