@@ -21,28 +21,67 @@
 <span>Inceputuri...</span>
 </div>
 
-<h1>Your Club</h1>
-<!--
-<p>text1</p>
 
-<div class="blockquoteTitle">
-<h4>Blockquote</h4>
-</div>
 
-<blockquote>
-<p>text2</p>
 
-</blockquote>
+<p>
+<i>	<font color = "#5151c7 " size = "20">Aici ne veti gasi. Bafta !</font>
+</i>
+</p>
 
-<!--<p><a href="#sitename">Read more...</a></p>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 21.3165, lng: -157.8590},
+          zoom: 12
+        });
+         var marker = new google.maps.Marker({
+            position:{lat: 21.3164, lng: -157.8590} ,
+            map: map,
+            title: "Kuan Yin Temple"
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqbL1gcLBNwvPKaZI_P6YsLaoUkpmGlcY&callback=initMap"
+    async defer></script>
+  </body>
+</html>
+</br>
 
-<h2>Headline</h2>
+<p>
+<i>	<font color = "#5151c7 " size = "5">Orar de functionare :</font>
+</i>
+</br>
+Luni - Vineri : 12-16 (cu tot cu pauzele de <b><font color = "#358e14 ">rugaciune</b></font>)</br>
+Sambata : Ati vrea voi!</br>
+Duminica : Nu te gandi!</br>
 
-<p>text3</p>
 
-<h3>Headline</h3>
-<p>text4</p>
--->
+</p>
+
+
 </div>
 
 </div>
@@ -113,16 +152,13 @@ Team - Your Team
 
 <div style="clear: both;"></div>
 
+
+
+
 </div>
 
 <div id="push"></div>
 
-</div>
-
-<div id="footer">
-&copy; Copyright 2008 by <a href="#sitename">Your Club</a> | <a href="http://www.wfiedler-online.de">Design by wfiedler</a><br />
-Lorem ipsum dolor sit amet,<br />
-consectetuer adipiscing elit.
 </div>
 
 </body>

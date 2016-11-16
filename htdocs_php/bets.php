@@ -7,7 +7,7 @@
 <title>Jucatori Fotbal</title>
 
 <link rel="stylesheet" type="text/css" href="../style.css" />
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
 <div id="maincontainer">
@@ -20,29 +20,9 @@
 <h1>Bets</h1>
 <span>Inceputuri...</span>
 </div>
-<!--
-<h1>Your Club</h1>
 
-<p>text1</p>
 
-<div class="blockquoteTitle">
-<h4>Blockquote</h4>
-</div>
 
-<blockquote>
-<p>text2</p>
-
-</blockquote>
-
-<!--<p><a href="#sitename">Read more...</a></p>
-
-<h2>Headline</h2>
-
-<p>text3</p>
-
-<h3>Headline</h3>
-<p>text4</p>
--->
 </div>
 
 </div>

@@ -47,10 +47,28 @@ mysqli_close($link);
 
 <div id="maincontainer">
 
-<button onclick="location.href='index_site2.php'">EN</button>
-	
+<button class ="buttons" id="button_en" style="margin-left: 100px;" onclick="location.href='index_site2.php'"><img id="image" src="img/england.jpg"> </button>
+<button class ="buttons" id="button_ro" onclick="location.href='index_site2.php'"><img id="image" src="img/romania.png"> </button>
 
-<button onclick="location.href='ro.php'">RO</button>
+<style>
+
+.buttons{
+	height: 44px;
+	width: 50px;
+	padding:0 0 0 0;
+	border: none;
+}
+
+.buttons #button_en{
+	margin-left: 100px;
+}
+
+.buttons #image {
+	height: 44px;
+	width: 50px;
+}
+
+</style>
 
 
 
