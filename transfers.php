@@ -12,6 +12,11 @@
 <body>
 <div id="maincontainer">
 
+<div class="login_links">
+    <a href="register.php">Inregistrare</a>
+    <a href="login.php">Autentificare</a>
+  </div>
+  
 <div id="contentwrapper">
 
 <div id="contentcolumn">
@@ -132,7 +137,7 @@ Meniu
 
 <ul>
 <li><?php echo "<a href='index_PHP.php'>Home</a>";?></li>
-<li><?php echo "<a href='about_us.php'>About Us</a>";?></li>
+
 <li><?php echo "<a href='stats.php'>Stats</a>";?></li>
 <li><?php echo "<a href='transfers.php'>Transfers</a>";?></li>
 <li><?php echo "<a href='bets.php'>Bets</a>";?></li>

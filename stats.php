@@ -15,6 +15,11 @@
 <body>
 <div id="maincontainer">
 
+<div class="login_links">
+    <a href="register.php">Inregistrare</a>
+    <a href="login.php">Autentificare</a>
+  </div>
+
 <div id="contentwrapper">
 
 <div id="contentcolumn">
@@ -25,18 +30,15 @@
   </div>
 
 <div id="header">
-
+</br>
+<h1>Your Club</h1>
 </div>
 
-<h1>Your Club</h1>
+</br>
+</br>
+</br>
 
-<p> 
-Aici se va pune un <b>buton/drop list</b> in care cautam un jucator dupa nume/echipa
-Cand se da click pe acest drop list se vor afisa automat statistici despre jucator ( goluri marcate,cluburi la care a jucat ,etc)
-+++<b>Grafic</b> evolutie jucator
-</p>
 
-<p><b>Buton</b> pentru  a compara 2 jucatori in functie de evolutii</p>
 
 
 
@@ -58,7 +60,7 @@ Meniu
 
 <ul>
 <li><?php echo "<a href='index_PHP.php'>Home</a>";?></li>
-<li><?php echo "<a href='about_us.php'>About Us</a>";?></li>
+
 <li><?php echo "<a href='stats.php'>Stats</a>";?></li>
 <li><?php echo "<a href='transfers.php'>Transfers</a>";?></li>
 <li><?php echo "<a href='bets.php'>Bets</a>";?></li>
@@ -104,17 +106,20 @@ Team - Your Team
 </div>
 
 <div class="row">
-  <div class="column" onclick="openModal(0)">
-    <img src="img/realmadrid.jpg" style="width:20%" >
+  <div >
+    <img  onclick="openModal(0)" src="img/realmadrid.jpg" style="width:10%" >
   </div>
-  <div class="column" onclick="openModal(1)">
-    <img src="img/barcelona.jpg" style="width:20%" >
-  </div>
+</br>
 
 
-  
-  <div class="column" onclick="openModal(2)">
-    <img src="img/manutd.jpg" style="width:20%" >
+  <div  >
+    <img onclick="openModal(1)" src="img/barcelona.jpg" style="width:10%" >
+  </div>
+
+  </br>
+
+  <div  >
+    <img onclick="openModal(2)" src="img/manutd.jpg" style="width:10%" >
   </div>
   
 

@@ -73,7 +73,7 @@ mysqli_close($link);
 --></div>
 
 
-
+<!--
 <p>Pe pagina aceasta se vor afisa urmatoarele meciuri + orele de start + un countdown pana la inceputul meciului</p>
 
 <div class="blockquoteTitle">
@@ -86,14 +86,14 @@ mysqli_close($link);
 </blockquote>
 
 <!--<p><a href="#sitename">Read more...</a></p>
--->
+
 <h2>Headline</h2>
 
 <p>text3</p>
 
 <h3>Headline</h3>
 <p>text4</p>
-
+-->
 <h2> <font color="fa1f1f">AICI SE CREEAZA CHESTII(CREATE) </font></h2>
 <br/>
 <form method="post" action="index_PHP.php">
@@ -274,11 +274,10 @@ Menu
 <div id="menu">
 
 <ul>
-<li><?php echo "<a href='index_PHP.php'>Home</a>";?></li>
-<li><?php echo "<a href='about_us.php'>About Us</a>";?></li>
-<li><?php echo "<a href='stats.php'>Stats</a>";?></li>
-<li><?php echo "<a href='transfers.php'>Transfers</a>";?></li>
-<li><?php echo "<a href='bets.php'>Bets</a>";?></li>
+<li><?php echo "<a href='ro.php'>Acasa</a>";?></li>
+<li><?php echo "<a href='stats.php'>Statistici</a>";?></li>
+<li><?php echo "<a href='transfers.php'>Transferuri</a>";?></li>
+<li><?php echo "<a href='bets.php'>Pariuri</a>";?></li>
 <li><?php echo "<a href='contact.php'>Contact</a>";?></li>
 </ul>
 

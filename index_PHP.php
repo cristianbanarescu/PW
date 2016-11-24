@@ -47,8 +47,8 @@ mysqli_close($link);
 
 <div id="maincontainer">
 	<div class="login_links">
-		<a href="register.php">Inregistrare</a>
-		<a href="login.php">Autentificare</a>
+		<a href="register.php">Register</a>
+		<a href="login.php">Login</a>
 	</div>
 	
 
@@ -74,8 +74,8 @@ mysqli_close($link);
 
 
 
-<p>Pe pagina aceasta se vor afisa ............................................urmatoarele meciuri + orele de start + un countdown pana la inceputul meciului</p>
 
+<!--
 <div class="blockquoteTitle">
 <h4>Blockquote</h4>
 </div>
@@ -86,14 +86,14 @@ mysqli_close($link);
 </blockquote>
 
 <!--<p><a href="#sitename">Read more...</a></p>
--->
+-
 <h2>Headline</h2>
 
 <p>text3</p>
 
 <h3>Headline</h3>
 <p>text4</p>
-
+-->
 <h2> <font color="fa1f1f">AICI SE CREEAZA CHESTII(CREATE) </font></h2>
 <br/>
 <form method="post" action="index_PHP.php">
@@ -275,7 +275,7 @@ Menu
 
 <ul>
 <li><?php echo "<a href='index_PHP.php'>Home</a>";?></li>
-<li><?php echo "<a href='about_us.php'>About Us</a>";?></li>
+
 <li><?php echo "<a href='stats.php'>Stats</a>";?></li>
 <li><?php echo "<a href='transfers.php'>Transfers</a>";?></li>
 <li><?php echo "<a href='bets.php'>Bets</a>";?></li>
