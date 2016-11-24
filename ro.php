@@ -276,7 +276,7 @@ Menu
 <ul>
 <li><?php echo "<a href='ro.php'>Acasa</a>";?></li>
 <li><?php echo "<a href='stats.php'>Statistici</a>";?></li>
-<li><?php echo "<a href='transfers.php'>Transferuri</a>";?></li>
+<li><?php echo "<a href='line-up echipa.php'>Echipa de start</a>";?></li>
 <li><?php echo "<a href='bets.php'>Pariuri</a>";?></li>
 <li><?php echo "<a href='contact.php'>Contact</a>";?></li>
 </ul>

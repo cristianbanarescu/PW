@@ -125,7 +125,7 @@ Meniu
 <li><?php echo "<a href='index_PHP.php'>Home</a>";?></li>
 
 <li><?php echo "<a href='stats.php'>Stats</a>";?></li>
-<li><?php echo "<a href='transfers.php'>Transfers</a>";?></li>
+<li><?php echo "<a href='line-up echipa.php'>Team Line-up</a>";?></li>
 <li><?php echo "<a href='bets.php'>Bets</a>";?></li>
 <li><?php echo "<a href='contact.php'>Contact</a>";?></li>
 </ul>
