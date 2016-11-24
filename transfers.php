@@ -55,6 +55,11 @@
   <li class="ui-state-default">Item 4</li>
   <li class="ui-state-default">Item 5</li>
   <li class="ui-state-default">Item 6</li>
+  <li class="ui-state-default">Item 7</li>
+  <li class="ui-state-default">Item 8</li>
+  <li class="ui-state-default">Item 9</li>
+  <li class="ui-state-default">Item 10</li>
+  <li class="ui-state-default">Item 11</li>
 </ul>
  
 <!--<h5 class="rezerve">Rezervele echipei</h5>
@@ -66,10 +71,16 @@
   <li class="ui-state-highlight">Item 4</li>
   <li class="ui-state-highlight">Item 5</li>
   <li class="ui-state-highlight">Item 6</li>
+  <li class="ui-state-highlight">Item 7</li>
+  <li class="ui-state-highlight">Item 8</li>
+  <li class="ui-state-highlight">Item 9</li>
+  <li class="ui-state-highlight">Item 10</li>
+  <li class="ui-state-highlight">Item 11</li>
+  <li class="ui-state-highlight">Item 12</li>
+
 </ul>
  
  
-
 
 <!--
 <p>text1</p>
