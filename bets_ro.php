@@ -8,6 +8,7 @@
 
 <link rel="stylesheet" type="text/css" href="style.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="readmore.js"></script>
 </head>
 <body>
 <div id="maincontainer">
@@ -25,29 +26,25 @@
 		<button class ="buttons" id="button_en" style="margin-left: 37px;" onclick="location.href='bets.php'"><img id="image" src="img/england.jpg"> </button>
 		<button class ="buttons" id="button_ro" onclick="location.href='bets_ro.php'"><img id="image" src="img/romania.png"> </button>
 	</div>
-<div id="header">
 
+<div id="header">
+</br>
+</br>
+<p align="center" ><font size="5"><b> TOP 3 Win bets</b></font></p>
 </div>
 
-<textarea id="textarea1" diasbled>
-Articol 1
-</textarea>
 
-</br>
-</br>
-</br>
+<span class="bets" id="bets1">
+30 pounds => won 500000 pounds
+Salvia portland leggings banh mi fanny pack mixtape, authentic bushwick wes anderson intelligentsia artisan typewriter high life they sold out mixtape high life. Marfa ethnic wayfarers brooklyn keytar mixtape. Blue bottle shoreditch gluten-free, mixtape hoodie whatever pinterest viral twee fashion axe high life irony biodiesel tofu.
 
-<textarea id="textarea2" diasbled>
-Articol 2
-</textarea>
+Retro church-key thundercats keytar, skateboard irony selvage ethnic freegan banjo pour-over fixie. Raw denim fashion ax eoke locavore disrupt, tonx retro authentic letterpress raw denim stumptown mixtape ugh kale chips flexitarian 90's deep v. Squid fingerstache bespoke wolf DIY. Banjo pour-over shoreditch cardigan try-hard.
 
-</br>
-</br>
-</br>
+Skateboard artisan bicycle rights next level vinyl cardigan beard twee, farm-to-table truffaut. Shoreditch freegan cliche thundercats, bushwick VHS intelligentsia selfies ethnic try-hard before they sold out. Marfa terry richardson hella, seitan odd future pug butcher. Wes anderson tousled YOLO cardigan. Typewriter high life carles, artisan gentrify messenger bag single-origin coffee truffaut thundercats cray 90's pour-over seitan. Banksy 8-bit organic, salvia gentrify stumptown wayfarers. Godard echo park before they sold out chambray, skateboard twee mcsweeney's synth hella.
 
-<textarea id="textarea3" diasbled>
-Articol 3
-</textarea>
+Flannel pinterest Austin twee narwhal, hoodie swag wolf photo booth. Hella kale chips marfa occupy pitchfork put a bird on it. Semiotics dreamcatcher selfies beard DIY umami craft beer 3 wolf moon. Try-hard literally mustache polaroid ennui VHS. High life fixie wolf, trust fund twee seitan pinterest blog helvetica sriracha. Tattooed selvage try-hard, biodiesel banjo direct trade echo park
+</span>
+
 
 </br>
 </br>
@@ -55,9 +52,38 @@ Articol 3
 
 
 
-<textarea id="textarea4" diasbled>
-Articol 4
-</textarea>
+<span class="bets" id="bets2">
+80 p => won 585000 pounds
+Maids table how learn drift but purse stand yet set. Music me house could among oh as their. Piqued our sister shy nature almost his wicket. Hand dear so we hour to. He we be hastily offence effects he service. Sympathize it projection ye insipidity celebrated my pianoforte indulgence. Point his truth put style. Elegance exercise as laughing proposal mistaken if. We up precaution an it solicitude acceptance invitation. 
+
+Dependent certainty off discovery him his tolerably offending. Ham for attention remainder sometimes additions recommend fat our. Direction has strangers now believing. Respect enjoyed gay far exposed parlors towards. Enjoyment use tolerably dependent listening men. No peculiar in handsome together unlocked do by. Article concern joy anxious did picture sir her. Although desirous not recurred disposed off shy you numerous securing. 
+
+Remember outweigh do he desirous no cheerful. Do of doors water ye guest. We if prosperous comparison middletons at. Park we in lose like at no. An so to preferred convinced distrusts he determine. In musical me my placing clothes comfort pleased hearing. Any residence you satisfied and rapturous certainty two. Procured outweigh as outlived so so. On in bringing graceful proposal blessing of marriage outlived. Son rent face our loud near. 
+
+</span>
+
+
+
+</br>
+</br>
+</br>
+
+<span class="bets" id="bets3">
+100 p => won 650000 p
+Maids table how learn drift but purse stand yet set. Music me house could among oh as their. Piqued our sister shy nature almost his wicket. Hand dear so we hour to. He we be hastily offence effects he service. Sympathize it projection ye insipidity celebrated my pianoforte indulgence. Point his truth put style. Elegance exercise as laughing proposal mistaken if. We up precaution an it solicitude acceptance invitation. 
+
+Dependent certainty off discovery him his tolerably offending. Ham for attention remainder sometimes additions recommend fat our. Direction has strangers now believing. Respect enjoyed gay far exposed parlors towards. Enjoyment use tolerably dependent listening men. No peculiar in handsome together unlocked do by. Article concern joy anxious did picture sir her. Although desirous not recurred disposed off shy you numerous securing. 
+
+
+Remember outweigh do he desirous no cheerful. Do of doors water ye guest. We if prosperous comparison middletons at. Park we in lose like at no. An so to preferred convinced distrusts he determine. In musical me my placing clothes comfort pleased hearing. Any residence you satisfied and rapturous certainty two. Procured outweigh as outlived so so. On in bringing graceful proposal blessing of marriage outlived. Son rent face our loud near. 
+</span>
+</br>
+</br>
+</br>
+
+
+
+
 
 </br>
 </br>
@@ -65,7 +91,9 @@ Articol 4
 
 	<div id="paragrafe">
 
-<a href="http://www.goalprofits.com/biggest-ever-football-accumulator-wins/">top 10 pariuri</a>
+
+Pentru mai multe detalii despre alte castiguri accesati urmatoarea 
+<a href="http://www.goalprofits.com/biggest-ever-football-accumulator-wins/">pagina</a>
 
 	</div>
 
