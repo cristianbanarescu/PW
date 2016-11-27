@@ -7,7 +7,6 @@
 <title>Jucatori Fotbal</title>
 <link rel="stylesheet" type="text/css" href="style_stats.css" />
 <link rel="stylesheet" type="text/css" href="qtip-wiki.css" />
-
 <link rel="stylesheet" type="text/css" href="jquery.qtip.css" />
 
 <script
@@ -16,7 +15,6 @@
   crossorigin="anonymous"></script>
 
   <script type="text/javascript" src="wiki_stats.js"></script>
-
   <script type="text/javascript" src="jquery.qtip.js"></script>
 
 
@@ -122,7 +120,7 @@ Team - Your Team
 
 <div class="row">
   <div >
-    <img class="class_madrid" id="img_madrid" onclick="openModal(0)" src="img/realmadrid.jpg" style="width:10%" >
+    <img  id="img_madrid" onclick="openModal(0)" src="img/realmadrid.jpg" style="width:10%" >
   </div>
 </br>
 
