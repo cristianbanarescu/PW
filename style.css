@@ -238,24 +238,24 @@ li.own { background-color: #d6ebcc; color: #666; }
 }
 
 #textarea1 {
-    max-width: 540px; 
-    max-height: 200px;	
+    width: 556px; 
+    height: 177px;	
+    resize:none;
 }
 
 #textarea2 {
-    max-width: 540px; 
-    max-height: 200px;	
+    width: 556px; 
+    height: 177px;	
+    resize:none;	
 }
 
 #textarea3 {
-    max-width: 540px; 
-    max-height: 200px;	
+    width: 556px; 
+    height: 177px;	
+    resize:none;
 }
 
-#textarea4 {
-    max-width: 540px; 
-    max-height: 200px;	
-}
+
 
 #paragrafe
 {
@@ -283,3 +283,16 @@ li.own { background-color: #d6ebcc; color: #666; }
     font-size: 1.2em;
     width: 120px;
   }
+
+
+/*.bets
+{
+	border:1px solid black;
+}
+*/
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}

@@ -34,12 +34,6 @@
 <h1>Your Club</h1>
 </div>
 
-</br>
-</br>
-</br>
-
-
-
 
 
 </div>
@@ -105,7 +99,6 @@ Team - Your Team
 
 </div>
 
-<div class="row">
   <div >
     <img  onclick="openModal(0)" src="img/realmadrid.jpg" style="width:10%" >
   </div>
@@ -122,6 +115,7 @@ Team - Your Team
     <img onclick="openModal(2)" src="img/manutd.jpg" style="width:10%" >
   </div>
   
+
 
 <div id="myModal" class="modal">
   <div class="modal-content">
