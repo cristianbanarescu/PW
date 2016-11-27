@@ -73,27 +73,7 @@ mysqli_close($link);
 --></div>
 
 
-<!--
-<p>Pe pagina aceasta se vor afisa urmatoarele meciuri + orele de start + un countdown pana la inceputul meciului</p>
 
-<div class="blockquoteTitle">
-<h4>Blockquote</h4>
-</div>
-
-<blockquote>
-<p>text2</p>
-
-</blockquote>
-
-<!--<p><a href="#sitename">Read more...</a></p>
-
-<h2>Headline</h2>
-
-<p>text3</p>
-
-<h3>Headline</h3>
-<p>text4</p>
--->
 <h2> <font color="fa1f1f">AICI SE CREEAZA CHESTII(CREATE) </font></h2>
 <br/>
 <form method="post" action="index_PHP.php">
