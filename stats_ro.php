@@ -16,6 +16,7 @@
 
   <script type="text/javascript" src="wiki_stats.js"></script>
   <script type="text/javascript" src="jquery.qtip.js"></script>
+  <script type="text/javascript" src="stats_script.js"></script>
 
 
 
@@ -79,37 +80,7 @@ Meniu
 </div>
 
 
-<!--
-<p>
-<strong>Last match:</strong><br />
-Your Team - Team 2:0
-</p>
 
-<p>
-<strong>Next match:</strong><br />
-Team - Your Team
-</p>
-
-<ul id="table">
-<li class="head1">League</li>
-<li class="pos head2">Pos</li>
-<li class="team head2">Team</li>
-<li class="pts head2">Pts</li>
-<li class="pos">1.</li>
-<li class="team">Team 1</li>
-<li class="pts">9</li>
-<li class="pos own">2.</li>
-<li class="team own">Your Team</li>
-<li class="pts own">6</li>
-<li class="pos">3.</li>
-<li class="team">Team 3</li>
-<li class="pts">1</li>
-<li class="pos">4.</li>
-<li class="team">Team 4</li>
-<li class="pts">1</li>
-
-</ul>
--->
 <div style="clear: both;"></div>
 
 </div>
