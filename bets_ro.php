@@ -30,15 +30,7 @@
 </div>
 
 <textarea id="textarea1" diasbled>
-At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
-</textarea>
-
-</br>
-</br>
-</br>
-
-<textarea id="textarea3" diasbled>
-At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+Articol 1
 </textarea>
 
 </br>
@@ -46,7 +38,15 @@ At w3schools.com you will learn how to make a website. We offer free tutorials i
 </br>
 
 <textarea id="textarea2" diasbled>
-At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+Articol 2
+</textarea>
+
+</br>
+</br>
+</br>
+
+<textarea id="textarea3" diasbled>
+Articol 3
 </textarea>
 
 </br>
@@ -56,7 +56,7 @@ At w3schools.com you will learn how to make a website. We offer free tutorials i
 
 
 <textarea id="textarea4" diasbled>
-At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+Articol 4
 </textarea>
 
 </br>
@@ -65,7 +65,7 @@ At w3schools.com you will learn how to make a website. We offer free tutorials i
 
 	<div id="paragrafe">
 
-<a href="http://www.goalprofits.com/biggest-ever-football-accumulator-wins/">link top 10 bets</a>
+<a href="http://www.goalprofits.com/biggest-ever-football-accumulator-wins/">top 10 pariuri</a>
 
 	</div>
 

@@ -30,15 +30,7 @@
 </div>
 
 <textarea id="textarea1" diasbled>
-At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
-</textarea>
-
-</br>
-</br>
-</br>
-
-<textarea id="textarea3" diasbled>
-At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+Article 1
 </textarea>
 
 </br>
@@ -46,7 +38,15 @@ At w3schools.com you will learn how to make a website. We offer free tutorials i
 </br>
 
 <textarea id="textarea2" diasbled>
-At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+Article 2
+</textarea>
+
+</br>
+</br>
+</br>
+
+<textarea id="textarea3" diasbled>
+Article 3
 </textarea>
 
 </br>
@@ -56,7 +56,7 @@ At w3schools.com you will learn how to make a website. We offer free tutorials i
 
 
 <textarea id="textarea4" diasbled>
-At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+Article 4
 </textarea>
 
 </br>
@@ -65,7 +65,7 @@ At w3schools.com you will learn how to make a website. We offer free tutorials i
 
 	<div id="paragrafe">
 
-<a href="http://www.goalprofits.com/biggest-ever-football-accumulator-wins/">link top 10 bets</a>
+<a href="http://www.goalprofits.com/biggest-ever-football-accumulator-wins/">top 10 bets</a>
 
 	</div>
 
@@ -128,12 +128,5 @@ Team - Your Team
 <div id="push"></div>
 
 </div>
-<!--
-<div id="footer">
-&copy; Copyright 2008 by <a href="#sitename">Your Club</a> | <a href="http://www.wfiedler-online.de">Design by wfiedler</a><br />
-Lorem ipsum dolor sit amet,<br />
-consectetuer adipiscing elit.
-</div>
--->
 </body>
 </html>
