@@ -11,7 +11,7 @@
   src="https://code.jquery.com/jquery-3.1.1.js"
   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
   crossorigin="anonymous"></script>
-<script type="text/javascript" src="readmore.js"></script>
+<script type="text/javascript" src="script_bets.js"></script>
 
 
 
@@ -39,62 +39,63 @@
 <p align="center" ><font size="5"><b> TOP 3 Win bets</b></font></p>
 </div>
 
+<div class="bets" id="bets1">
+<p>1. £100 on 6542/1  odds – won £650,000</p>
+  
+  <h class="more">Read more</h>
+ 
+ 
+  <div class="complete">
+    <p></br>Some may call it stupidity, but it takes some guts to splash £100 on teams that are already losing, and for one lucky Londoner it certainly paid off, as he scooped the biggest payout in the history of the sport.
 
-<span class="bets" id="bets1">
-30 pounds => won 500000 pounds
-Salvia portland leggings banh mi fanny pack mixtape, authentic bushwick wes anderson intelligentsia artisan typewriter high life they sold out mixtape high life. Marfa ethnic wayfarers brooklyn keytar mixtape. Blue bottle shoreditch gluten-free, mixtape hoodie whatever pinterest viral twee fashion axe high life irony biodiesel tofu.
+The wager consisted of eight games which had just 20 minutes left to play, with many of the results going against his picks when it was placed. A draw for West Ham while they were 2-0 down to Stoke, Charlton to draw with Sheffield Wednesday in a game they were losing and the same for Coventry in their match against Leyton Orient.
 
-Retro church-key thundercats keytar, skateboard irony selvage ethnic freegan banjo pour-over fixie. Raw denim fashion ax eoke locavore disrupt, tonx retro authentic letterpress raw denim stumptown mixtape ugh kale chips flexitarian 90's deep v. Squid fingerstache bespoke wolf DIY. Banjo pour-over shoreditch cardigan try-hard.
+Having predicted a draw between Fulham and Wigan, the later went ahead with just eight minutes remaining and, with an extra man on the field, appeared likely to secure the victory – until Bryan Ruiz levelled from the spot with just two minutes to play to keep the hopeful punt alive.
 
-Skateboard artisan bicycle rights next level vinyl cardigan beard twee, farm-to-table truffaut. Shoreditch freegan cliche thundercats, bushwick VHS intelligentsia selfies ethnic try-hard before they sold out. Marfa terry richardson hella, seitan odd future pug butcher. Wes anderson tousled YOLO cardigan. Typewriter high life carles, artisan gentrify messenger bag single-origin coffee truffaut thundercats cray 90's pour-over seitan. Banksy 8-bit organic, salvia gentrify stumptown wayfarers. Godard echo park before they sold out chambray, skateboard twee mcsweeney's synth hella.
+After a number of twists and turns it appeared likely that Coventry City, 2-1 down against Leyton orient, would be the only side to let him down – until Jim O’Brien struck in the 91st minute to confirm the draw and earn one ballsy better an unbelievable £650,000 – not a bad return for just 20 nerve-wracking minutes. </p>
+  </div>
+</div>
 
-Flannel pinterest Austin twee narwhal, hoodie swag wolf photo booth. Hella kale chips marfa occupy pitchfork put a bird on it. Semiotics dreamcatcher selfies beard DIY umami craft beer 3 wolf moon. Try-hard literally mustache polaroid ennui VHS. High life fixie wolf, trust fund twee seitan pinterest blog helvetica sriracha. Tattooed selvage try-hard, biodiesel banjo direct trade echo park
-</span>
+</br>
+
+
+
+<div class="bets" id="bets2">
+<p>2. 80p on 683,738/1 odds – won £585,000</p>
+ 
+One lucky punter had one key rule in his betting strategy – never place a wager of more than €1 each time. All it took was one moment of luck for it to all pay off.
+</br>	
+</br>
+  <h class="more">Read more</h>
+ 
+  <div class="complete">
+    <p></br>The anonymous football fan from a small village in Malta has placed a 19-match accumulator via the William Hill website, with the final game to be played between Premier League rivals Chelsea and Liverpool. That weekend in November 2011 had gone largely as expected, with the favourites taking the spoils in the vast majority of the games played.
+
+With Chelsea favourites, things didn’t look good going into the match. Liverpool scored midway through the first-half, before Daniel Sturridge levelled following the break. The game appeared to be heading for a draw, until former-England right-back Glen Johnson popped up with three minutes left to play to score what proved to be a £585,000 goal.
+
+According to William Hill, the lucky victor wasn’t a Liverpool fan before kick-off, but he was by the time the final whistle was blown. </p>
+  </div>
+</div>
 
 
 </br>
+
+<div class="bets" id="bets3">
+<p>3. 30p at 1,666,666/1 odds – won £500,000</p>
+ 
+With a stake of just 30p, the punter didn’t appear to have much faith in the bet paying off, yet with odds of 1.66 million to one, not much of a wager was needed to generate one of the biggest football payouts of all time.
 </br>
 </br>
+  <h class="more">Read more</h>
+ 
+  <div class="complete">
+    <p></br>The 2000/01 season was decent enough for Manchester United, as they scooped their third consecutive Premier League title, which was also their seventh top flight title since the competition was rebranded in 1992, nine years earlier. The dominant club weren’t quite so lucky in Europe, as Germany giants Bayern Munich knocked them out of the Champions League at the quarter-finals stage. However, for one lucky Red Devils fan, Bayern’s progression made the season so much better.The unidentified fan had placed a 15-event accumulator in August 2000, before the season had kicked off.
 
+Having correctly predicted the winners of the top five English leagues, three Scottish divisions, the Rugby Union champions and the cricket County Championship winners, it was down to Bayern Munich to win the Champions League and confirm the massive win. With the game going to penalties, it was one of few times that an Englishman was happy to see the Germans scoring from the spot. </p>
+  </div>
+</div>
 
-
-<span class="bets" id="bets2">
-80 p => won 585000 pounds
-Maids table how learn drift but purse stand yet set. Music me house could among oh as their. Piqued our sister shy nature almost his wicket. Hand dear so we hour to. He we be hastily offence effects he service. Sympathize it projection ye insipidity celebrated my pianoforte indulgence. Point his truth put style. Elegance exercise as laughing proposal mistaken if. We up precaution an it solicitude acceptance invitation. 
-
-Dependent certainty off discovery him his tolerably offending. Ham for attention remainder sometimes additions recommend fat our. Direction has strangers now believing. Respect enjoyed gay far exposed parlors towards. Enjoyment use tolerably dependent listening men. No peculiar in handsome together unlocked do by. Article concern joy anxious did picture sir her. Although desirous not recurred disposed off shy you numerous securing. 
-
-Remember outweigh do he desirous no cheerful. Do of doors water ye guest. We if prosperous comparison middletons at. Park we in lose like at no. An so to preferred convinced distrusts he determine. In musical me my placing clothes comfort pleased hearing. Any residence you satisfied and rapturous certainty two. Procured outweigh as outlived so so. On in bringing graceful proposal blessing of marriage outlived. Son rent face our loud near. 
-
-</span>
-
-
-
-</br>
-</br>
-</br>
-
-<span class="bets" id="bets3">
-100 p => won 650000 p
-Maids table how learn drift but purse stand yet set. Music me house could among oh as their. Piqued our sister shy nature almost his wicket. Hand dear so we hour to. He we be hastily offence effects he service. Sympathize it projection ye insipidity celebrated my pianoforte indulgence. Point his truth put style. Elegance exercise as laughing proposal mistaken if. We up precaution an it solicitude acceptance invitation. 
-
-Dependent certainty off discovery him his tolerably offending. Ham for attention remainder sometimes additions recommend fat our. Direction has strangers now believing. Respect enjoyed gay far exposed parlors towards. Enjoyment use tolerably dependent listening men. No peculiar in handsome together unlocked do by. Article concern joy anxious did picture sir her. Although desirous not recurred disposed off shy you numerous securing. 
-
-
-Remember outweigh do he desirous no cheerful. Do of doors water ye guest. We if prosperous comparison middletons at. Park we in lose like at no. An so to preferred convinced distrusts he determine. In musical me my placing clothes comfort pleased hearing. Any residence you satisfied and rapturous certainty two. Procured outweigh as outlived so so. On in bringing graceful proposal blessing of marriage outlived. Son rent face our loud near. 
-</span>
-</br>
-</br>
-</br>
-
-
-
-
-
-</br>
-</br>
-</br>
-
+</br></br>
 	<div id="paragrafe">
 
 
