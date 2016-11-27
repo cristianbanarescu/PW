@@ -1,5 +1,5 @@
 .qtip-wiki{
-    max-width: 385px;
+    max-width: 50px;
 }
 
 .qtip-wiki p{
@@ -7,7 +7,7 @@
 }
 
 .qtip-wiki h1{
-    font-size: 20px;
+    font-size: 40px;
     line-height: 1.1;
     margin: 0 0 5px;
 }
@@ -19,8 +19,9 @@
 
 .qtip-wiki .info{
     overflow: hidden;
+    
 }
 
 .qtip-wiki p.note{
-    font-weight: 700;
+    font-weight: 100;
 }

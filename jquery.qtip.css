@@ -16,7 +16,7 @@
 	top: -28000px;
 	display: none;
 
-	max-width: 280px;
+	max-width: 620px;
 	min-width: 50px;
 
 	font-size: 10.5px;
@@ -35,6 +35,7 @@
 
 		text-align: left;
 		word-wrap: break-word;
+
 	}
 
 	.qtip-titlebar{
@@ -44,6 +45,7 @@
 
 		border-width: 0 0 1px;
 		font-weight: bold;
+
 	}
 
 	.qtip-titlebar + .qtip-content{ border-top-width: 0 !important; }
@@ -58,6 +60,7 @@
 		outline: medium none;
 
 		border: 1px solid transparent;
+
 	}
 
 		.qtip-titlebar .qtip-close{
@@ -98,18 +101,21 @@
 .qtip-focus{}
 
 /* Applied on hover of tooltips i.e. added/removed on mouseenter/mouseleave respectively */
-.qtip-hover{}
+.qtip-hover{
+}
 
 /* Default tooltip style */
 .qtip-default{
-	border: 1px solid #F1D031;
+	border: 1px solid #b993ff;
 
-	background-color: #FFFFA3;
+	background-color: #ff7931;
 	color: #555;
+	font-size: 12px;
 }
 
 	.qtip-default .qtip-titlebar{
-		background-color: #FFEF93;
+		background-color: #ff7931;
+		
 	}
 
 	.qtip-default .qtip-icon{
