@@ -6,9 +6,22 @@
 
 <title>Jucatori Fotbal</title>
 <link rel="stylesheet" type="text/css" href="style_stats.css" />
-<script type="text/javascript" src="stats_script.js"></script>
+<link rel="stylesheet" type="text/css" href="qtip-wiki.css" />
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="jquery.qtip.css" />
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="wiki_stats.js"></script>
+
+  <script type="text/javascript" src="jquery.qtip.js"></script>
+
+
+
+
 
 </head>
 
@@ -103,6 +116,10 @@ Team - Your Team
 
 </div>
 
+<a href="info_rmadrid.html">OWL</a>
+
+
+
 <div class="row">
   <div >
     <img  onclick="openModal(0)" src="img/realmadrid.jpg" style="width:10%" >
@@ -119,7 +136,8 @@ Team - Your Team
   <div  >
     <img onclick="openModal(2)" src="img/manutd.jpg" style="width:10%" >
   </div>
-  
+
+
 
 <div id="myModal" class="modal">
   <div class="modal-content">

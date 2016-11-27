@@ -38,3 +38,4 @@ function showSlides(n, modal_nr) {
   dots[slideIndex-1].className += " active";
 }
 
+
