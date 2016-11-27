@@ -4,7 +4,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 
-<title>Players Soccer</title>
+<title>Jucatori Fotbal</title>
 <link rel="stylesheet" type="text/css" href="style_stats.css" />
 <script type="text/javascript" src="stats_script.js"></script>
 
@@ -16,8 +16,8 @@
 <div id="maincontainer">
 
 <div class="login_links">
-    <a href="register.php">Register</a>
-    <a href="login.php">Login</a>
+    <a href="register.php">Inregistrare</a>
+    <a href="login.php">Autentificare</a>
   </div>
 
 <div id="contentwrapper">
@@ -34,6 +34,12 @@
 <!--<h1>Your Club</h1>-->
 </div>
 
+</br>
+</br>
+</br>
+
+
+
 
 
 </div>
@@ -47,20 +53,18 @@
 </div>
 
 <div id="rightcolumnTitle">
-Menu
+Meniu
 </div>
 
 <div id="menu">
 
 <ul>
-<li><?php echo "<a href='index_PHP.php'>Home</a>";?></li>
-
-<li><?php echo "<a href='stats.php'>Stats</a>";?></li>
-<li><?php echo "<a href='line-up_team.php'>Team Line-up</a>";?></li>
-<li><?php echo "<a href='bets.php'>Bets</a>";?></li>
-<li><?php echo "<a href='contact.php'>Contact</a>";?></li>
+<li><?php echo "<a href='index_PHP_ro.php'>Acasa</a>";?></li>
+<li><?php echo "<a href='stats_ro.php'>Statistici</a>";?></li>
+<li><?php echo "<a href='line-up_team_ro.php'>Echipa de start</a>";?></li>
+<li><?php echo "<a href='bets_ro.php'>Pariuri</a>";?></li>
+<li><?php echo "<a href='contact_ro.php'>Contact</a>";?></li>
 </ul>
-
 </div>
 
 
@@ -99,6 +103,7 @@ Team - Your Team
 
 </div>
 
+<div class="row">
   <div >
     <img  onclick="openModal(0)" src="img/realmadrid.jpg" style="width:10%" >
   </div>
@@ -115,7 +120,6 @@ Team - Your Team
     <img onclick="openModal(2)" src="img/manutd.jpg" style="width:10%" >
   </div>
   
-
 
 <div id="myModal" class="modal">
   <div class="modal-content">
@@ -246,6 +250,8 @@ Team - Your Team
 <div id="push"></div>
 
 </div>
+
+
 
 </body>
 </html>

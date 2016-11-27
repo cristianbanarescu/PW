@@ -63,7 +63,7 @@ mysqli_close($link);
 
 <div class=language_buttons>
 		<button class ="buttons" id="button_en" style="margin-left: 37px;" onclick="location.href='index_PHP.php'"><img id="image" src="img/england.jpg"> </button>
-		<button class ="buttons" id="button_ro" onclick="location.href='ro.php'"><img id="image" src="img/romania.png"> </button>
+		<button class ="buttons" id="button_ro" onclick="location.href='index_PHP_ro.php'"><img id="image" src="img/romania.png"> </button>
 	</div>
 
 <div id="header">
@@ -263,7 +263,7 @@ echo $select2;
 
 
 <div id="rightcolumnTitle">
-Menu
+Meniu
 
 </div>
 
@@ -274,15 +274,15 @@ Menu
 <div id="menu">
 
 <ul>
-<li><?php echo "<a href='ro.php'>Acasa</a>";?></li>
-<li><?php echo "<a href='stats.php'>Statistici</a>";?></li>
-<li><?php echo "<a href='line-up echipa.php'>Echipa de start</a>";?></li>
-<li><?php echo "<a href='bets.php'>Pariuri</a>";?></li>
-<li><?php echo "<a href='contact.php'>Contact</a>";?></li>
+<li><?php echo "<a href='index_PHP_ro.php'>Acasa</a>";?></li>
+<li><?php echo "<a href='stats_ro.php'>Statistici</a>";?></li>
+<li><?php echo "<a href='line-up_team_ro.php'>Echipa de start</a>";?></li>
+<li><?php echo "<a href='bets_ro.php'>Pariuri</a>";?></li>
+<li><?php echo "<a href='contact_ro.php'>Contact</a>";?></li>
 </ul>
 
 </div>
-
+<!--
 <p>
 <strong>Last match:</strong><br />
 Your Team - Team 2:0
@@ -312,7 +312,7 @@ Team - Your Team
 <li class="pts">1</li>
 
 </ul>
-
+-->
 <div style="clear: both;"></div>
 
 </div>

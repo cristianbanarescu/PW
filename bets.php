@@ -4,7 +4,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 
-<title>Jucatori Fotbal</title>
+<title>Bets</title>
 
 <link rel="stylesheet" type="text/css" href="style.css" />
 <script
@@ -21,8 +21,8 @@
 <div id="maincontainer">
 
 <div class="login_links">
-		<a href="register.php">Inregistrare</a>
-		<a href="login.php">Autentificare</a>
+		<a href="register.php">Register</a>
+		<a href="login.php">Login</a>
 	</div>
 
 <div id="contentwrapper">
@@ -30,8 +30,8 @@
 <div id="contentcolumn">
 
 <div class=language_buttons>
-		<button class ="buttons" id="button_en" style="margin-left: 37px;" onclick="location.href='index_PHP.php'"><img id="image" src="img/england.jpg"> </button>
-		<button class ="buttons" id="button_ro" onclick="location.href='ro.php'"><img id="image" src="img/romania.png"> </button>
+		<button class ="buttons" id="button_en" style="margin-left: 37px;" onclick="location.href='bets.php'"><img id="image" src="img/england.jpg"> </button>
+		<button class ="buttons" id="button_ro" onclick="location.href='bets_ro.php'"><img id="image" src="img/romania.png"> </button>
 	</div>
 <div id="header">
 </br>
@@ -39,6 +39,7 @@
 <p align="center" ><font size="5"><b> TOP 3 Win bets</b></font></p>
 </div>
 
+<<<<<<< HEAD
 <span class="bets" id="bets1">
 30 pounds => won 500000 pounds
 Salvia portland leggings banh mi fanny pack mixtape, authentic bushwick wes anderson intelligentsia artisan typewriter high life they sold out mixtape high life. Marfa ethnic wayfarers brooklyn keytar mixtape. Blue bottle shoreditch gluten-free, mixtape hoodie whatever pinterest viral twee fashion axe high life irony biodiesel tofu.
@@ -50,11 +51,17 @@ Skateboard artisan bicycle rights next level vinyl cardigan beard twee, farm-to-
 Flannel pinterest Austin twee narwhal, hoodie swag wolf photo booth. Hella kale chips marfa occupy pitchfork put a bird on it. Semiotics dreamcatcher selfies beard DIY umami craft beer 3 wolf moon. Try-hard literally mustache polaroid ennui VHS. High life fixie wolf, trust fund twee seitan pinterest blog helvetica sriracha. Tattooed selvage try-hard, biodiesel banjo direct trade echo park
 </span>
 
+=======
+<textarea id="textarea1" diasbled>
+Article 1
+</textarea>
+>>>>>>> 7e3cc26e318cedb8d93e2b02fb6bbf38a8e1ab14
 
 </br>
 </br>
 </br>
 
+<<<<<<< HEAD
 
 <span class="bets" id="bets2">
 80 p => won 585000 pounds
@@ -65,16 +72,27 @@ Dependent certainty off discovery him his tolerably offending. Ham for attention
 Remember outweigh do he desirous no cheerful. Do of doors water ye guest. We if prosperous comparison middletons at. Park we in lose like at no. An so to preferred convinced distrusts he determine. In musical me my placing clothes comfort pleased hearing. Any residence you satisfied and rapturous certainty two. Procured outweigh as outlived so so. On in bringing graceful proposal blessing of marriage outlived. Son rent face our loud near. 
 
 </span>
+=======
+<textarea id="textarea2" diasbled>
+Article 2
+</textarea>
+>>>>>>> 7e3cc26e318cedb8d93e2b02fb6bbf38a8e1ab14
 
 </br>
 </br>
 </br>
 
+<<<<<<< HEAD
 <span class="bets" id="bets3">
 100 p => won 650000 p
 Maids table how learn drift but purse stand yet set. Music me house could among oh as their. Piqued our sister shy nature almost his wicket. Hand dear so we hour to. He we be hastily offence effects he service. Sympathize it projection ye insipidity celebrated my pianoforte indulgence. Point his truth put style. Elegance exercise as laughing proposal mistaken if. We up precaution an it solicitude acceptance invitation. 
 
 Dependent certainty off discovery him his tolerably offending. Ham for attention remainder sometimes additions recommend fat our. Direction has strangers now believing. Respect enjoyed gay far exposed parlors towards. Enjoyment use tolerably dependent listening men. No peculiar in handsome together unlocked do by. Article concern joy anxious did picture sir her. Although desirous not recurred disposed off shy you numerous securing. 
+=======
+<textarea id="textarea3" diasbled>
+Article 3
+</textarea>
+>>>>>>> 7e3cc26e318cedb8d93e2b02fb6bbf38a8e1ab14
 
 Remember outweigh do he desirous no cheerful. Do of doors water ye guest. We if prosperous comparison middletons at. Park we in lose like at no. An so to preferred convinced distrusts he determine. In musical me my placing clothes comfort pleased hearing. Any residence you satisfied and rapturous certainty two. Procured outweigh as outlived so so. On in bringing graceful proposal blessing of marriage outlived. Son rent face our loud near. 
 </span>
@@ -84,7 +102,13 @@ Remember outweigh do he desirous no cheerful. Do of doors water ye guest. We if 
 
 
 
+<<<<<<< HEAD
 
+=======
+<textarea id="textarea4" diasbled>
+Article 4
+</textarea>
+>>>>>>> 7e3cc26e318cedb8d93e2b02fb6bbf38a8e1ab14
 
 </br>
 </br>
@@ -92,8 +116,13 @@ Remember outweigh do he desirous no cheerful. Do of doors water ye guest. We if 
 
 	<div id="paragrafe">
 
+<<<<<<< HEAD
 Pentru mai multe detalii despre alte castiguri accesati urmatoarea 
 <a href="http://www.goalprofits.com/biggest-ever-football-accumulator-wins/">pagina</a>
+=======
+<a href="http://www.goalprofits.com/biggest-ever-football-accumulator-wins/">top 10 bets</a>
+
+>>>>>>> 7e3cc26e318cedb8d93e2b02fb6bbf38a8e1ab14
 	</div>
 
 </div>
@@ -103,22 +132,21 @@ Pentru mai multe detalii despre alte castiguri accesati urmatoarea
 
 
 <div id="rightcolumnTitle">
-Meniu
+Menu
 </div>
 
 <div id="menu">
 
 <ul>
 <li><?php echo "<a href='index_PHP.php'>Home</a>";?></li>
-
 <li><?php echo "<a href='stats.php'>Stats</a>";?></li>
-<li><?php echo "<a href='line-up echipa.php'>Team Line-up</a>";?></li>
+<li><?php echo "<a href='line-up_team.php'>Team Line-up</a>";?></li>
 <li><?php echo "<a href='bets.php'>Bets</a>";?></li>
 <li><?php echo "<a href='contact.php'>Contact</a>";?></li>
 </ul>
 
 </div>
-
+<!--
 <p>
 <strong>Last match:</strong><br />
 Your Team - Team 2:0
@@ -148,7 +176,7 @@ Team - Your Team
 <li class="pts">1</li>
 
 </ul>
-
+-->
 <div style="clear: both;"></div>
 
 </div>
@@ -156,12 +184,5 @@ Team - Your Team
 <div id="push"></div>
 
 </div>
-
-<div id="footer">
-&copy; Copyright 2008 by <a href="#sitename">Your Club</a> | <a href="http://www.wfiedler-online.de">Design by wfiedler</a><br />
-Lorem ipsum dolor sit amet,<br />
-consectetuer adipiscing elit.
-</div>
-
 </body>
 </html>
