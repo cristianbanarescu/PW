@@ -4,7 +4,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 
-<title>Jucatori Fotbal</title>
+<title>Team</title>
 
 <link rel="stylesheet" type="text/css" href="style.css" />
 
@@ -13,8 +13,8 @@
 <div id="maincontainer">
 
 <div class="login_links">
-    <a href="register.php">Inregistrare</a>
-    <a href="login.php">Autentificare</a>
+    <a href="register.php">Register</a>
+    <a href="login.php">Login</a>
   </div>
   
 <div id="contentwrapper">
@@ -22,13 +22,13 @@
 <div id="contentcolumn">
 
 <div class=language_buttons>
-		<button class ="buttons" id="button_en" style="margin-left: 37px;" onclick="location.href='index_PHP.php'"><img id="image" src="img/england.jpg"> </button>
-		<button class ="buttons" id="button_ro" onclick="location.href='ro.php'"><img id="image" src="img/romania.png"> </button>
+		<button class ="buttons" id="button_en" style="margin-left: 37px;" onclick="location.href='line-up_team.php'"><img id="image" src="img/england.jpg"> </button>
+		<button class ="buttons" id="button_ro" onclick="location.href='line-up_team_ro.php'"><img id="image" src="img/romania.png"> </button>
 	</div>
 
 <div id="header">
 </br>
-<h1>Line-up echipa</h1>
+<h1>Team line-up</h1>
 </div>
 
 
@@ -51,7 +51,7 @@
   } );
   </script>
 
-  <h5 class="primul11">Primul 11 al echipei	&emsp; &emsp; &emsp; &emsp; &emsp; Rezervele</h5>
+  <h5 class="primul11"> &emsp;First team	&emsp; &emsp; &emsp; &emsp; &emsp;  &emsp; Reserves</h5>
 
   <ul id="sortable1" class="connectedSortable">
   <li class="ui-state-default">Item 1</li>
@@ -130,22 +130,21 @@
 </div>
 
 <div id="rightcolumnTitle">
-Meniu
+Menu
 </div>
 
 <div id="menu">
 
 <ul>
 <li><?php echo "<a href='index_PHP.php'>Home</a>";?></li>
-
 <li><?php echo "<a href='stats.php'>Stats</a>";?></li>
-<li><?php echo "<a href='line-up echipa.php'>Team line-up</a>";?></li>
+<li><?php echo "<a href='line-up_team.php'>Team line-up</a>";?></li>
 <li><?php echo "<a href='bets.php'>Bets</a>";?></li>
 <li><?php echo "<a href='contact.php'>Contact</a>";?></li>
 </ul>
 
 </div>
-
+<!--
 <p>
 <strong>Last match:</strong><br />
 Your Team - Team 2:0
@@ -175,7 +174,7 @@ Team - Your Team
 <li class="pts">1</li>
 
 </ul>
-
+-->
 <div style="clear: both;"></div>
 
 </div>
@@ -183,36 +182,6 @@ Team - Your Team
 <div id="push"></div>
 
 </div>
-
-<div id="footer">
-&copy; Copyright 2008 by <a href="#sitename">Your Club</a> | <a href="http://www.wfiedler-online.de">Design by wfiedler</a><br />
-Lorem ipsum dolor sit amet,<br />
-consectetuer adipiscing elit.
-</div>
-
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<head>
- 
-</head>
-<body>
- 
 
 </body>
 </html>

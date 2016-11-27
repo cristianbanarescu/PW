@@ -63,7 +63,7 @@ mysqli_close($link);
 
 <div class=language_buttons>
 		<button class ="buttons" id="button_en" style="margin-left: 37px;" onclick="location.href='index_PHP.php'"><img id="image" src="img/england.jpg"> </button>
-		<button class ="buttons" id="button_ro" onclick="location.href='ro.php'"><img id="image" src="img/romania.png"> </button>
+		<button class ="buttons" id="button_ro" onclick="location.href='index_PHP_ro.php'"><img id="image" src="img/romania.png"> </button>
 	</div>
 
 <div id="header">
@@ -275,15 +275,14 @@ Menu
 
 <ul>
 <li><?php echo "<a href='index_PHP.php'>Home</a>";?></li>
-
 <li><?php echo "<a href='stats.php'>Stats</a>";?></li>
-<li><?php echo "<a href='line-up echipa.php'>Team Line-up</a>";?></li>
+<li><?php echo "<a href='line-up_team.php'>Team Line-up</a>";?></li>
 <li><?php echo "<a href='bets.php'>Bets</a>";?></li>
 <li><?php echo "<a href='contact.php'>Contact</a>";?></li>
 </ul>
 
 </div>
-
+<!--
 <p>
 <strong>Last match:</strong><br />
 Your Team - Team 2:0
@@ -313,7 +312,7 @@ Team - Your Team
 <li class="pts">1</li>
 
 </ul>
-
+-->
 <div style="clear: both;"></div>
 
 </div>
@@ -321,8 +320,12 @@ Team - Your Team
 <div id="push"></div>
 
 </div>
-
-
-
+<!--
+<div id="footer">
+&copy; Copyright 2008 by <a href="#sitename">Your Club</a> | <a href="http://www.wfiedler-online.de">Design by wfiedler</a><br />
+Lorem ipsum dolor sit amet,<br />
+consectetuer adipiscing elit.
+</div>
+-->
 </body>
 </html>

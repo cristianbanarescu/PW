@@ -4,7 +4,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 
-<title>Bets</title>
+<title>Pariuri</title>
 
 <link rel="stylesheet" type="text/css" href="style.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -13,8 +13,8 @@
 <div id="maincontainer">
 
 <div class="login_links">
-		<a href="register.php">Register</a>
-		<a href="login.php">Login</a>
+		<a href="register.php">Inregistrare</a>
+		<a href="login.php">Autentificare</a>
 	</div>
 
 <div id="contentwrapper">
@@ -76,17 +76,17 @@ At w3schools.com you will learn how to make a website. We offer free tutorials i
 
 
 <div id="rightcolumnTitle">
-Menu
+Meniu
 </div>
 
 <div id="menu">
 
 <ul>
-<li><?php echo "<a href='index_PHP.php'>Home</a>";?></li>
-<li><?php echo "<a href='stats.php'>Stats</a>";?></li>
-<li><?php echo "<a href='line-up_team.php'>Team Line-up</a>";?></li>
-<li><?php echo "<a href='bets.php'>Bets</a>";?></li>
-<li><?php echo "<a href='contact.php'>Contact</a>";?></li>
+<li><?php echo "<a href='index_PHP_ro.php'>Acasa</a>";?></li>
+<li><?php echo "<a href='stats_ro.php'>Statistici</a>";?></li>
+<li><?php echo "<a href='line-up_team_ro.php'>Echipa de start</a>";?></li>
+<li><?php echo "<a href='bets_ro.php'>Pariuri</a>";?></li>
+<li><?php echo "<a href='contact_ro.php'>Contact</a>";?></li>
 </ul>
 
 </div>
@@ -128,12 +128,5 @@ Team - Your Team
 <div id="push"></div>
 
 </div>
-<!--
-<div id="footer">
-&copy; Copyright 2008 by <a href="#sitename">Your Club</a> | <a href="http://www.wfiedler-online.de">Design by wfiedler</a><br />
-Lorem ipsum dolor sit amet,<br />
-consectetuer adipiscing elit.
-</div>
--->
 </body>
 </html>

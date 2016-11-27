@@ -1,4 +1,4 @@
-<html> 	
+<html>  
 
 <head>
 
@@ -13,8 +13,8 @@
 <div id="maincontainer">
 
 <div class="login_links">
-    <a href="register.php">Register</a>
-    <a href="login.php">Login</a>
+    <a href="register.php">Inregistrare</a>
+    <a href="login.php">Autentificare</a>
   </div>
 
 <div id="contentwrapper">
@@ -29,7 +29,7 @@
 <div id="header">
 </br>
 </br>
-<i> <center><font color = "#5151c7 " size = "5">Here you will find us. Good luck !</font></center>
+<i> <center><font color = "#5151c7 " size = "5">Aici ne veti gasi. Bafta !</font></center>
 </i>
 </div>
 
@@ -83,12 +83,12 @@
 </br>
 
 <p>
-<i>	<font color = "#5151c7 " size = "5">Working hours :</font>
+<i> <font color = "#5151c7 " size = "5">Orar de functionare :</font>
 </i>
 </br>
-Monday - Friday : 12-16 (including <b><font color = "#358e14 ">praying</b></font> breaks)</br> 
-Saturday : You wish!</br>
-Sunday : Don't think about it!</br>
+Luni - Vineri : 12-16 (cu tot cu pauzele de <b><font color = "#358e14 ">rugaciune</b></font>)</br>
+Sambata : Ati vrea voi!</br>
+Duminica : Nu te gandi!</br>
 
 
 </p>
@@ -116,17 +116,17 @@ Sunday : Don't think about it!</br>
 </div>
 
 <div id="rightcolumnTitle">
-Menu
+Meniu
 </div>
 
 <div id="menu">
 
 <ul>
-<li><?php echo "<a href='index_PHP.php'>Home</a>";?></li>
-<li><?php echo "<a href='stats.php'>Stats</a>";?></li>
-<li><?php echo "<a href='line-up_team.php'>Team Line-up</a>";?></li>
-<li><?php echo "<a href='bets.php'>Bets</a>";?></li>
-<li><?php echo "<a href='contact.php'>Contact</a>";?></li>
+<li><?php echo "<a href='index_PHP_ro.php'>Acasa</a>";?></li>
+<li><?php echo "<a href='stats_ro.php'>Statistici</a>";?></li>
+<li><?php echo "<a href='line-up_team_ro.php'>Echipa de start</a>";?></li>
+<li><?php echo "<a href='bets_ro.php'>Pariuri</a>";?></li>
+<li><?php echo "<a href='contact_ro.php'>Contact</a>";?></li>
 </ul>
 
 </div>
@@ -162,9 +162,6 @@ Team - Your Team
 </ul>
 -->
 <div style="clear: both;"></div>
-
-
-
 
 </div>
 
