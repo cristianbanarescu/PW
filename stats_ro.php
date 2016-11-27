@@ -116,25 +116,25 @@ Team - Your Team
 
 </div>
 
-<a href="info_rmadrid.html">OWL</a>
+
 
 
 
 <div class="row">
   <div >
-    <img  onclick="openModal(0)" src="img/realmadrid.jpg" style="width:10%" >
+    <img class="class_madrid" id="img_madrid" onclick="openModal(0)" src="img/realmadrid.jpg" style="width:10%" >
   </div>
 </br>
 
 
   <div  >
-    <img onclick="openModal(1)" src="img/barcelona.jpg" style="width:10%" >
+    <img id="img_barca" onclick="openModal(1)" src="img/barcelona.jpg" style="width:10%" >
   </div>
 
   </br>
 
   <div  >
-    <img onclick="openModal(2)" src="img/manutd.jpg" style="width:10%" >
+    <img id="img_manutd" onclick="openModal(2)" src="img/manutd.jpg" style="width:10%" >
   </div>
 
 
