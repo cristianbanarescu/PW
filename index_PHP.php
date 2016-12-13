@@ -47,11 +47,35 @@ $query = "SELECT * FROM jucatori.`player` INNER JOIN laravellogin.users
 $result = mysqli_query($link_players,$query);
 
 
+//select2
+$sql2=mysqli_query($link,'SELECT nume_echipa FROM users');
+if(mysqli_num_rows($sql2)){
 
+$select2='<form action="" method="post"> <select name="select2">';
+$select2.='<option >'."---".'</option>';
+while($rs2=mysqli_fetch_array($sql2)){
+      $select2.='<option >'.$rs2['nume_echipa'].'</option>';
+  	}
+}
+
+$select2.='</select>';
+
+
+//select3
+$sql3=mysqli_query($link,'SELECT nume_echipa FROM users');
+if(mysqli_num_rows($sql3)){
+
+$select3='<form action="" method="post"> <select name="select3">';
+$select3.='<option >'."---".'</option>';
+while($rs3=mysqli_fetch_array($sql3)){
+      $select3.='<option >'.$rs3['nume_echipa'].'</option>';
+  	}
+}
+
+$select3.='</select>';
 
 mysqli_close($link);
 mysqli_close($link_players);
-
 ?>
 
 
@@ -125,9 +149,10 @@ mysqli_close($link_players);
 <h2> <font color="fa1f1f">AICI SE CREEAZA CHESTII(CREATE) </font></h2>
 <br/>
 <form method="post" action="index_PHP.php">
-Nume_echipa:<input type="text" name = "nume_echipa"></br>
-Username : <input type="text" name="username"><br>
-Password : <input type="text" name="password"><br>
+Nume echipa:<?php echo $select2; ?></br>
+Nume jucator : <input type="text" name="nume_jucator"><br>
+Varsta : <input type="text" name="varsta"><br>
+Goluri marcate : <input type="text" name="goluri_marcate"><br>
 <input type="submit"  name ="form_create">
 </form>
 <br/>
@@ -135,6 +160,43 @@ Password : <input type="text" name="password"><br>
 
 <?php
 if(!empty($_POST["form_create"]))
+{
+
+	$link= mysqli_connect("localhost","root","","jucatori");
+	if (!$link) {
+	    echo "Error: Unable to connect to MySQL." . PHP_EOL;
+	    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
+	    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
+	    exit;
+	}
+
+	$link->select_db("jucatori");
+
+
+
+	$selected_val2 = $_POST["select2"];
+	$var_nume_jucator = $_POST["nume_jucator"];
+	$var_varsta = $_POST["varsta"];
+	$var_goluri_marcate = $_POST["goluri_marcate"];
+
+	 $query = "INSERT INTO `player` (`id`, `nume_echipa`, `nume_jucator`, `varsta`, `goluri_marcate`) VALUES (NULL, '$selected_val2',
+	  '$var_nume_jucator', '$var_varsta', '$var_goluri_marcate');";
+
+	if(!mysqli_query($link,$query))
+		echo "inserare cu succes";
+	mysqli_close($link);
+}
+
+?>
+
+<br/>
+<form method="post" action="index_PHP.php">
+Nume echipa:<input type="text" name="nume_echipa"></br>
+<input type="submit"  name ="form_create2">
+</form>
+
+<?php
+if(!empty($_POST["form_create2"]))
 {
 
 	$link= mysqli_connect("localhost","root","","laravellogin");
@@ -147,28 +209,23 @@ if(!empty($_POST["form_create"]))
 
 	$link->select_db("laravellogin");
 
+	$var_numeEchipa = $_POST["nume_echipa"];
 
 
-	$var_nume_echipa= $_POST["nume_echipa"];
-	$var_username = $_POST["username"];
-	$var_password = $_POST["password"];
+	 $query = "INSERT INTO `users` (`id`, `nume_echipa`, `username`, `password`, `createDate`) VALUES (NULL, '$var_numeEchipa',
+	  NULL, NULL, CURRENT_TIMESTAMP);";
 
-	 $query = "INSERT INTO `users` (`id`, `nume_echipa`, `username`, `password`, `createDate`) VALUES (NULL, '$var_nume_echipa',
-	  '$var_username', '$var_password', CURRENT_TIMESTAMP);";
-
-	mysqli_query($link,$query);
-	echo "inserare cu succes";
+	if(!mysqli_query($link,$query))
+		echo "inserare cu succes";
 	mysqli_close($link);
 }
 
 ?>
 
-
 <h2> <font color = "fa1f1f" >AICI SE AFISEAZA CHESTII(READ)</font></h2>
 <br/>
 <?php echo $select1; 
 error_reporting(E_ALL & ~E_NOTICE);
-echo "You have selected :" .$selected_val;
 echo "</br>";
 echo "</br>";  
 
@@ -192,8 +249,8 @@ while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 </br>
 
 <form method="post" action="index_PHP.php">
-Username : <input type="text" name="username"><br>
-Password : <input type="text" name="password"><br>
+Nume jucator : <input type="text" name="nume_jucator"><br>
+Goluri marcate : <input type="text" name="goluri_marcate"><br>
 <input type="submit" name="form_update" >
 </form>
 
@@ -205,7 +262,7 @@ Password : <input type="text" name="password"><br>
 if(!empty($_POST["form_update"]))
 {
 
-	$link= mysqli_connect("localhost","root","","laravellogin");
+	$link= mysqli_connect("localhost","root","","jucatori");
 	if (!$link) {
 	    echo "Error: Unable to connect to MySQL." . PHP_EOL;
 	    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
@@ -214,24 +271,15 @@ if(!empty($_POST["form_update"]))
 	}
 
 
-	$var_username = $_POST["username"];
-	$var_password = $_POST["password"];
+	$var_numeJucator = $_POST["nume_jucator"];
+	$var_goluriMarcate = $_POST["goluri_marcate"];
 
-	if($var_password!="")
-	{
-		$update = "UPDATE users  SET password='$var_password' WHERE username='$var_username'";
-			if (mysqli_query($link, $update)) {
-			    echo "Record updated successfully";
-			} else {
-			    echo "Error updating record: " . mysqli_error($link);
-			}
-	}
-	else
-	{
-		echo "Password field can't be empty<br>";
-		echo "Please refresh the page and enter another password";
-		echo "<br>";
-	}
+	
+	$update = "UPDATE player  SET goluri_marcate='$var_goluriMarcate' WHERE nume_jucator='$var_numeJucator'";
+		if (!mysqli_query($link, $update)) {
+		    echo "Error updating record: " . mysqli_error($link);
+		}
+	
 }
 
 ?>
@@ -239,11 +287,16 @@ if(!empty($_POST["form_update"]))
 
 <h2> <font color = "fa1f1f" >AICI SE STERG CHESTII(DELETE)</font></h2>
 </br>
-Selectati userul pe care doriti sa il stergeti :
+Selectati playerul pe care doriti sa il stergeti :
 <br/>
 <?php
+	$select3.='<input type="submit" name="submit3" value="Get Players" />
+	</form>';
+	echo $select3; 
+	$selected_val3 = $_POST["select3"];
 	
-	$link= mysqli_connect("localhost","root","","laravellogin");
+
+	$link= mysqli_connect("localhost","root","","jucatori");
 if (!$link) {
     echo "Error: Unable to connect to MySQL." . PHP_EOL;
     echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
@@ -254,24 +307,26 @@ if (!$link) {
 
 
 
-$sql1=mysqli_query($link,'SELECT username FROM users');
-if(mysqli_num_rows($sql1)){
-$select2 = '<form method="post" action="index_PHP.php">';
-$select2.='<select name="select2">';
-while($rs1=mysqli_fetch_array($sql1)){
-      $select2.='<option >'.$rs1['username'].'</option>';
+$sql4=mysqli_query($link,"SELECT nume_jucator FROM player WHERE `nume_echipa`='$selected_val3'");
+if(mysqli_num_rows($sql4)){
+$select_player = '<form method="post" action="#">';
+$select_player.='<select name="select_player">';
+$select_player.='<option >'."---".'</option>';
+while($rs4=mysqli_fetch_array($sql4)){
+      $select_player.='<option >'.$rs4['nume_jucator'].'</option>';
   	}
+  	$select_player.='<input type="submit"  name ="cristi"/>';
+$select_player.='</form>';
 }
 
-$select2.='</select>';
-$select2.='<input type="submit"  name ="cristi"/>';
-$select2.='</form>';
+$select_player.='</select>';
 
 
+echo $select_player;
 	if(!empty($_POST["cristi"]))
 	{
-		$var= $_POST['select2'];
-		$delete = "DELETE FROM `users` WHERE `username`='$var'";
+		$var= $_POST['select_player'];
+		$delete = "DELETE FROM `player` WHERE `nume_jucator`='$var'";
 
 			if (!mysqli_query($link,$delete)) {
 		    	  echo "Error deleting record: " . $link->error;
@@ -280,7 +335,7 @@ $select2.='</form>';
 
 mysqli_close($link);	
 
-echo $select2;
+
 ?>
 
 </br>
