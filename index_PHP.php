@@ -164,22 +164,20 @@ if(!empty($_POST["form_create"]))
 ?>
 
 
-
 <h2> <font color = "fa1f1f" >AICI SE AFISEAZA CHESTII(READ)</font></h2>
 <br/>
 <?php echo $select1; 
+error_reporting(E_ALL & ~E_NOTICE);
 echo "You have selected :" .$selected_val;
 echo "</br>";
 echo "</br>";  
-while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
-			if($row["nume_echipa"]==$selected_val){
 
-           printf("nume_jucator: %s  --- varsta : %d  --- goluri_marcate: %d ", $row["nume_jucator"],$row["varsta"],$row["goluri_marcate"]);	
-			printf("</br>");  
+while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+	if($row["nume_echipa"]==$selected_val){
+		printf("nume_jucator: %s  --- varsta : %d  --- goluri_marcate: %d ", $row["nume_jucator"],$row["varsta"],$row["goluri_marcate"]);
+		printf("</br>");  
 			}
-           
-          // printf("nume echipa %s ",$row["nume_echipa"]);
-          }// Displaying Selected Value?>
+          }?>
 <br/>
 <br/>
 <br/>

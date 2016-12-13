@@ -8,21 +8,49 @@ if (!$link) {
 }
 
 
+//mysqli_select_db("laravellogin");
+
+$link_players= mysqli_connect("localhost","root","","jucatori");
+if (!$link_players) {
+    echo "Error: Unable to connect to MySQL." . PHP_EOL;
+    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
+    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
+    exit;
+}
+
+//mysqli_select_db("jucatori");
+
+
 $sql1=mysqli_query($link,'SELECT nume_echipa FROM users');
 if(mysqli_num_rows($sql1)){
 
-$select1='<select name="select1">';
+$select1='<form action="" method="post"> <select name="select1">';
+$select1.='<option >'."---".'</option>';
 while($rs1=mysqli_fetch_array($sql1)){
       $select1.='<option >'.$rs1['nume_echipa'].'</option>';
   	}
 }
 
 
+
 $select1.='</select>';
+$select1.='<input type="submit" name="submit" value="Get Players" />
+</form>';
+
+if(isset($_POST['submit'])){
+$selected_val = $_POST['select1'];  //get the value from the submit :)
+}
+
+
+$query = "SELECT * FROM jucatori.`player` INNER JOIN laravellogin.users   
+                    ON jucatori.`player`.nume_echipa= laravellogin.users.nume_echipa";
+$result = mysqli_query($link_players,$query);
+
+
 
 
 mysqli_close($link);
-
+mysqli_close($link_players);
 
 ?>
 
@@ -47,8 +75,8 @@ mysqli_close($link);
 
 <div id="maincontainer">
 	<div class="login_links">
-		<a href="register.php">Inregistrare</a>
-		<a href="login.php">Autentificare</a>
+		<a href="register.php">Register</a>
+		<a href="login.php">Login</a>
 	</div>
 	
 
@@ -74,6 +102,26 @@ mysqli_close($link);
 
 
 
+
+<!--
+<div class="blockquoteTitle">
+<h4>Blockquote</h4>
+</div>
+
+<blockquote>
+<p>text2</p>
+
+</blockquote>
+
+<!--<p><a href="#sitename">Read more...</a></p>
+-
+<h2>Headline</h2>
+
+<p>text3</p>
+
+<h3>Headline</h3>
+<p>text4</p>
+-->
 <h2> <font color="fa1f1f">AICI SE CREEAZA CHESTII(CREATE) </font></h2>
 <br/>
 <form method="post" action="index_PHP.php">
@@ -119,14 +167,25 @@ if(!empty($_POST["form_create"]))
 
 <h2> <font color = "fa1f1f" >AICI SE AFISEAZA CHESTII(READ)</font></h2>
 <br/>
-<?php echo $select1; ?>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<?php echo $select1; 
+error_reporting(E_ALL & ~E_NOTICE);
+echo "You have selected :" .$selected_val;
+echo "</br>";
+echo "</br>";  
+while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+			if($row["nume_echipa"]==$selected_val){
 
-
+           printf("nume_jucator: %s  --- varsta : %d  --- goluri_marcate: %d ", $row["nume_jucator"],$row["varsta"],$row["goluri_marcate"]);	
+			printf("</br>");  
+			}
+           
+          
+          }?>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 <h2> <font color="fa1f1f">AICI SE MODIFICA CHESTII(UPDATE)</font></h2>
 </br>
 <b> Aici vom modifica parola pentru fiecare user din baza noastra de date </b>
