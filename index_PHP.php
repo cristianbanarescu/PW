@@ -217,6 +217,7 @@ if(!empty($_POST["form_create2"]))
 
 	if(!mysqli_query($link,$query))
 		echo "inserare cu succes";
+	 echo mysqli_query($link,$query) ;
 	mysqli_close($link);
 }
 
