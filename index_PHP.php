@@ -8,10 +8,23 @@ if (!$link) {
 }
 
 
+//mysqli_select_db("laravellogin");
+
+$link_players= mysqli_connect("localhost","root","","jucatori");
+if (!$link_players) {
+    echo "Error: Unable to connect to MySQL." . PHP_EOL;
+    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
+    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
+    exit;
+}
+
+//mysqli_select_db("jucatori");
+
+
 $sql1=mysqli_query($link,'SELECT nume_echipa FROM users');
 if(mysqli_num_rows($sql1)){
 
-$select1='<select name="select1">';
+$select1='<form action="#" method="post"> <select name="select1">';
 while($rs1=mysqli_fetch_array($sql1)){
       $select1.='<option >'.$rs1['nume_echipa'].'</option>';
   	}
@@ -19,10 +32,26 @@ while($rs1=mysqli_fetch_array($sql1)){
 
 
 $select1.='</select>';
+$select1.='<input type="submit" name="submit" value="Get Players" />
+</form>';
 
+if(isset($_POST['submit'])){
+$selected_val = $_POST['select1'];  // Storing Selected Value In Variable
+}
+
+
+$query = "SELECT nume_jucator,varsta,goluri_marcate FROM jucatori.`player` INNER JOIN laravellogin.users   
+                    ON jucatori.`player`.nume_echipa= laravellogin.users.nume_echipa";
+$result = mysqli_query($link_players,$query);
+
+
+while ($row = mysqli_fetch_array($result, MYSQLI_NUM)) {
+           printf("nume_jucator: %s  --- varsta : %d  --- goluri_marcate: %d ", $row[0],$row[1],$row[2]);//, $row[1]);
+           printf("</br>");  
+          }
 
 mysqli_close($link);
-
+mysqli_close($link_players);
 
 ?>
 
@@ -139,7 +168,8 @@ if(!empty($_POST["form_create"]))
 
 <h2> <font color = "fa1f1f" >AICI SE AFISEAZA CHESTII(READ)</font></h2>
 <br/>
-<?php echo $select1; ?>
+<?php echo $select1; 
+echo "You have selected :" .$selected_val;  // Displaying Selected Value?>
 <br/>
 <br/>
 <br/>
