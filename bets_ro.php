@@ -114,6 +114,9 @@ Meniu
 <li><?php echo "<a href='stats_ro.php'>Statistici</a>";?></li>
 <li><?php echo "<a href='line-up_team_ro.php'>Echipa de start</a>";?></li>
 <li><?php echo "<a href='bets_ro.php'>Pariuri</a>";?></li>
+<li><?php echo "<a href='add_player_ro.php'>Adauga jucator</a>";?></li>
+<li><?php echo "<a href='add_team_ro.php'>Adauga echipa</a>";?></li>
+<li><?php echo "<a href='view_player_ro.php'>Vezi jucator</a>";?></li>
 <li><?php echo "<a href='contact_ro.php'>Contact</a>";?></li>
 </ul>
 

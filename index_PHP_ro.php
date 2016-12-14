@@ -120,138 +120,6 @@ mysqli_close($link_players);
 <h3>Headline</h3>
 <p>text4</p>
 -->
-<h2> <font color="fa1f1f">AICI SE CREEAZA JUCATORI si se adauga la echipa selectata </font></h2>
-<br/>
-<form method="post" action="index_PHP.php">
-Nume echipa:<?php echo $select2; ?></br>
-Nume jucator : <input type="text" name="nume_jucator"><br>
-Varsta : <input type="text" name="varsta"><br>
-Goluri marcate : <input type="text" name="goluri_marcate"><br>
-<input type="submit"  name ="form_create">
-</form>
-<br/>
-<br/>
-
-<?php
-if(!empty($_POST["form_create"]))
-{
-
-	$link= mysqli_connect("localhost","root","","jucatori");
-	if (!$link) {
-	    echo "Error: Unable to connect to MySQL." . PHP_EOL;
-	    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-	    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
-	    exit;
-	}
-
-	$link->select_db("jucatori");
-
-
-
-	$selected_val2 = $_POST["select2"];
-	$var_nume_jucator = $_POST["nume_jucator"];
-	$var_varsta = $_POST["varsta"];
-	$var_goluri_marcate = $_POST["goluri_marcate"];
-
-	 $query = "INSERT INTO `player` (`id`, `nume_echipa`, `nume_jucator`, `varsta`, `goluri_marcate`) VALUES (NULL, '$selected_val2',
-	  '$var_nume_jucator', '$var_varsta', '$var_goluri_marcate');";
-
-	if(!mysqli_query($link,$query))
-		echo "eroare";
-	mysqli_close($link);
-}
-
-?>
-
-<br/>
-<form method="post" action="">
-Nume echipa:<input type="text" name="nume_echipa"></br>
-<input type="submit"  name ="form_create2">
-</form>
-
-<?php
-if(!empty($_POST["form_create2"]))
-{
-
-	$link_addTeam= mysqli_connect("localhost","root","","laravellogin");
-	if (!$link_addTeam) {
-	    echo "Error: Unable to connect to MySQL." . PHP_EOL;
-	    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-	    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
-	    exit;
-	}
-
-	$link_addTeam->select_db("laravellogin");
-
-	//$var_numeEchipa = $_POST["nume_echipa"];
-
-	//echo "$var_numeEchipa </br>";
-
-	if($_POST["nume_echipa"]!=NULL)
-	{
-			$var_numeEchipa=$_POST["nume_echipa"];
-			$query_addTeam= "INSERT INTO `users` (`nume_echipa`, `username`, `password`, `createDate`) VALUES ('$var_numeEchipa',
-	  NULL, NULL, CURRENT_TIMESTAMP);";
-
-	  		if(!mysqli_query($link_addTeam,$query_addTeam))
-				echo "eroare";	
-	}
-	
-	
-		
-
-	$_POST["nume_echipa"]=array();
-	
-	mysqli_close($link_addTeam);
-}
-
-?>
-<br/>
-<h2> <font color = "fa1f1f" >AICI SE AFISEAZA jucatorii de la echipa selectata</font></h2>
-<br/>
-<?php 
-$link= mysqli_connect("localhost","root","","laravellogin");
-if (!$link) {
-    echo "Error: Unable to connect to MySQL." . PHP_EOL;
-    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
-    exit;
-}
-
-$sql1=mysqli_query($link,'SELECT nume_echipa FROM users');
-if(mysqli_num_rows($sql1)){
-
-$select1='<form action="" method="post"> <select name="select1">';
-$select1.='<option >'."---".'</option>';
-while($rs1=mysqli_fetch_array($sql1)){
-      $select1.='<option >'.$rs1['nume_echipa'].'</option>';
-  	}
-}
-
-$select1.='</select>';
-$select1.='<input type="submit" name="submit" value="Get Players" />
-</form>';
-
-if(isset($_POST['submit'])){
-$selected_val = $_POST['select1'];  //get the value from the submit :)
-}
-
-echo $select1; 
-error_reporting(E_ALL & ~E_NOTICE);
-echo "</br>";
-echo "</br>";  
-
-while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
-	if($row["nume_echipa"]==$selected_val){
-		printf("nume_jucator: %s  --- varsta : %d  --- goluri_marcate: %d ", $row["nume_jucator"],$row["varsta"],$row["goluri_marcate"]);
-		printf("</br>");  
-			}
-          }?>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 
 
 <h2> <font color="fa1f1f">AICI SE MODIFICA informatiile despre jucatori</font></h2>
@@ -465,6 +333,9 @@ Meniu
 <li><?php echo "<a href='stats_ro.php'>Statistici</a>";?></li>
 <li><?php echo "<a href='line-up_team_ro.php'>Echipa de start</a>";?></li>
 <li><?php echo "<a href='bets_ro.php'>Pariuri</a>";?></li>
+<li><?php echo "<a href='add_player_ro.php'>Adauga jucator</a>";?></li>
+<li><?php echo "<a href='add_team_ro.php'>Adauga echipa</a>";?></li>
+<li><?php echo "<a href='view_player_ro.php'>Vezi jucator</a>";?></li>
 <li><?php echo "<a href='contact_ro.php'>Contact</a>";?></li>
 </ul>
 

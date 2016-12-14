@@ -126,6 +126,9 @@ Menu
 <li><?php echo "<a href='stats.php'>Stats</a>";?></li>
 <li><?php echo "<a href='line-up_team.php'>Team Line-up</a>";?></li>
 <li><?php echo "<a href='bets.php'>Bets</a>";?></li>
+<li><?php echo "<a href='add_player.php'>Add player</a>";?></li>
+<li><?php echo "<a href='add_team.php'>Add team</a>";?></li>
+<li><?php echo "<a href='view_player.php'>View player</a>";?></li>
 <li><?php echo "<a href='contact.php'>Contact</a>";?></li>
 </ul>
 
