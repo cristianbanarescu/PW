@@ -1,41 +1,3 @@
-<?php
-$link= mysqli_connect("localhost","root","","laravellogin");
-if (!$link) {
-    echo "Error: Unable to connect to MySQL." . PHP_EOL;
-    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
-    exit;
-}
-
-
-//mysqli_select_db("laravellogin");
-
-
-//mysqli_select_db("jucatori");
-
-
-//select2
-$sql2=mysqli_query($link,'SELECT nume_echipa FROM users');
-if(mysqli_num_rows($sql2)){
-
-$select2='<form action="" method="post"> <select name="select2">';
-$select2.='<option >'."---".'</option>';
-while($rs2=mysqli_fetch_array($sql2)){
-      $select2.='<option >'.$rs2['nume_echipa'].'</option>';
-  	}
-}
-
-$select2.='</select>';
-
-
-
-
-mysqli_close($link);
-
-?>
-
-
-
 <html> 	
 
 <head>
@@ -59,12 +21,6 @@ mysqli_close($link);
 		<a href="login.php">Login</a>
 	</div>
 	
-
-
-
-
-
-
 <div id="contentwrapper">
 
 <div id="contentcolumn">
@@ -79,20 +35,10 @@ mysqli_close($link);
 <h1>Home</h1>
 </div>
 
-
-
-
 <br/>
 <br/>
 <br/>
 <br/>
-<br/>
-
-
-
-
-
-
 <br/>
 <br/>
 <br/>
@@ -109,9 +55,6 @@ mysqli_close($link);
 Menu
 
 </div>
-
-
-
 
 
 <div id="menu">
