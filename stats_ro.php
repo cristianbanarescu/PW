@@ -18,10 +18,6 @@
   <script type="text/javascript" src="jquery.qtip.js"></script>
   <script type="text/javascript" src="stats_script.js"></script>
 
-
-
-
-
 </head>
 
 <body>
@@ -33,7 +29,6 @@
   </div>
 
 <div id="contentwrapper">
-
 
 <div id="contentcolumn">
 
@@ -89,7 +84,7 @@ Meniu
 <ul>
 <li><?php echo "<a href='index_PHP_ro.php'>Acasa</a>";?></li>
 <li><?php echo "<a href='stats_ro.php'>Statistici</a>";?></li>
-<li><?php echo "<a href='line-up_team_ro.php'>Echipa de start</a>";?></li>
+<!--<li><?php echo "<a href='line-up_team_ro.php'>Echipa de start</a>";?></li>-->
 <li><?php echo "<a href='bets_ro.php'>Pariuri</a>";?></li>
 <li><?php echo "<a href='add_player_ro.php'>Adauga jucator</a>";?></li>
 <li><?php echo "<a href='add_team_ro.php'>Adauga echipa</a>";?></li>

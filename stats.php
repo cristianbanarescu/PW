@@ -1,24 +1,22 @@
-l<html> 	
+<html>  
 
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 
-<title>Players Soccer</title>
+<title>Football players</title>
 <link rel="stylesheet" type="text/css" href="style_stats.css" />
 <link rel="stylesheet" type="text/css" href="qtip-wiki.css" />
 <link rel="stylesheet" type="text/css" href="jquery.qtip.css" />
-
 
 <script
   src="https://code.jquery.com/jquery-3.1.1.js"
   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
   crossorigin="anonymous"></script>
 
-<script type="text/javascript" src="wiki_stats.js"></script>
-<script type="text/javascript" src="jquery.qtip.js"></script>
-<script type="text/javascript" src="stats_script.js"></script>
-
+  <script type="text/javascript" src="wiki_stats.js"></script>
+  <script type="text/javascript" src="jquery.qtip.js"></script>
+  <script type="text/javascript" src="stats_script.js"></script>
 
 </head>
 
@@ -44,14 +42,13 @@ l<html>
 <!--<h1>Your Club</h1>-->
 </div>
 
-
 </br>
 </br>
 </br>
 
 </div>
-
-<div >
+<div class="row">
+  <div >
     <img  id="img_madrid" onclick="openModal(0)" src="img/realmadrid.jpg" style="width:10%" >
   </div>
 </br>
@@ -66,9 +63,8 @@ l<html>
   <div  >
     <img id="img_manutd" onclick="openModal(2)" src="img/manutd.jpg" style="width:10%" >
   </div>
-  
 
-
+</div>
 
 
 </div>
@@ -88,7 +84,7 @@ Menu
 <ul>
 <li><?php echo "<a href='index_PHP.php'>Home</a>";?></li>
 <li><?php echo "<a href='stats.php'>Stats</a>";?></li>
-<li><?php echo "<a href='line-up_team.php'>Team Line-up</a>";?></li>
+<!--<li><?php echo "<a href='line-up_team.php'>Team Line-up</a>";?></li>-->
 <li><?php echo "<a href='bets.php'>Bets</a>";?></li>
 <li><?php echo "<a href='add_player.php'>Add player</a>";?></li>
 <li><?php echo "<a href='add_team.php'>Add team</a>";?></li>
@@ -98,47 +94,14 @@ Menu
 <li><?php echo "<a href='delete_player.php'>Delete player</a>";?></li>
 <li><?php echo "<a href='contact.php'>Contact</a>";?></li>
 </ul>
-
 </div>
 
 
-<!--
-<p>
-<strong>Last match:</strong><br />
-Your Team - Team 2:0
-</p>
-
-<p>
-<strong>Next match:</strong><br />
-Team - Your Team
-</p>
-
-<ul id="table">
-<li class="head1">League</li>
-<li class="pos head2">Pos</li>
-<li class="team head2">Team</li>
-<li class="pts head2">Pts</li>
-<li class="pos">1.</li>
-<li class="team">Team 1</li>
-<li class="pts">9</li>
-<li class="pos own">2.</li>
-<li class="team own">Your Team</li>
-<li class="pts own">6</li>
-<li class="pos">3.</li>
-<li class="team">Team 3</li>
-<li class="pts">1</li>
-<li class="pos">4.</li>
-<li class="team">Team 4</li>
-<li class="pts">1</li>
-
-</ul>
--->
 
 <div style="clear: both;"></div>
 
-</div>
 
-  
+
 
 
 <div id="myModal" class="modal">
@@ -178,7 +141,7 @@ Team - Your Team
     <div class="column">
       <img class="demo cursor" src="img/zlatan.jpg" style="width:100%" onclick="currentSlide(3, 0)">
     </div>
-	
+  
   </div>
 </div>
 
@@ -221,7 +184,7 @@ Team - Your Team
     <div class="column">
       <img class="demo cursor" src="img/zlatan.jpg" style="width:100%" onclick="currentSlide(3, 1)">
     </div>
-	
+  
   </div>
 </div>
 
@@ -270,6 +233,8 @@ Team - Your Team
 <div id="push"></div>
 
 </div>
+
+
 
 </body>
 </html>

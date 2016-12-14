@@ -85,7 +85,7 @@ Menu
 <ul>
 <li><?php echo "<a href='index_PHP.php'>Home</a>";?></li>
 <li><?php echo "<a href='stats.php'>Stats</a>";?></li>
-<li><?php echo "<a href='line-up_team.php'>Team line-up</a>";?></li>
+<!--<li><?php echo "<a href='line-up_team.php'>Team line-up</a>";?></li>-->
 <li><?php echo "<a href='bets.php'>Bets</a>";?></li>
 <li><?php echo "<a href='add_player.php'>Add player</a>";?></li>
 <li><?php echo "<a href='add_team.php'>Add team</a>";?></li>

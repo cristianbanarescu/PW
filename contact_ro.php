@@ -101,18 +101,7 @@ Duminica : Nu te gandi!</br>
 
 <div id="imagecolumn">
 
-<!--<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
--->
+
 </div>
 
 <div id="rightcolumnTitle">
@@ -124,7 +113,7 @@ Meniu
 <ul>
 <li><?php echo "<a href='index_PHP_ro.php'>Acasa</a>";?></li>
 <li><?php echo "<a href='stats_ro.php'>Statistici</a>";?></li>
-<li><?php echo "<a href='line-up_team_ro.php'>Echipa de start</a>";?></li>
+<!--<li><?php echo "<a href='line-up_team_ro.php'>Echipa de start</a>";?></li>-->
 <li><?php echo "<a href='bets_ro.php'>Pariuri</a>";?></li>
 <li><?php echo "<a href='add_player_ro.php'>Adauga jucator</a>";?></li>
 <li><?php echo "<a href='add_team_ro.php'>Adauga echipa</a>";?></li>
@@ -136,37 +125,7 @@ Meniu
 </ul>
 
 </div>
-<!--
-<p>
-<strong>Last match:</strong><br />
-Your Team - Team 2:0
-</p>
 
-<p>
-<strong>Next match:</strong><br />
-Team - Your Team
-</p>
-
-<ul id="table">
-<li class="head1">League</li>
-<li class="pos head2">Pos</li>
-<li class="team head2">Team</li>
-<li class="pts head2">Pts</li>
-<li class="pos">1.</li>
-<li class="team">Team 1</li>
-<li class="pts">9</li>
-<li class="pos own">2.</li>
-<li class="team own">Your Team</li>
-<li class="pts own">6</li>
-<li class="pos">3.</li>
-<li class="team">Team 3</li>
-<li class="pts">1</li>
-<li class="pos">4.</li>
-<li class="team">Team 4</li>
-<li class="pts">1</li>
-
-</ul>
--->
 <div style="clear: both;"></div>
 
 </div>
