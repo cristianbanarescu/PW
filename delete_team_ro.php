@@ -74,7 +74,7 @@ echo $select_sterg;
 		    	  echo "Error deleting record: " . $link->error;
 					}
 
-		$var_update  = "UPDATE player SET nume_echipa='liber_contract' WHERE nume_echipa='$var'";
+		$var_update  = "UPDATE player SET nume_echipa='Liber de contract' WHERE nume_echipa='$var'";
 		if(!mysqli_query($link_update,$var_update))
 			echo "<script type='text/javascript'>alert('Eroare stergere echipa');</script>";
 			else
