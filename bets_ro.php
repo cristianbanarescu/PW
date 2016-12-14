@@ -21,8 +21,8 @@
 <div id="maincontainer">
 
 <div class="login_links">
-		<a href="register.php">Register</a>
-		<a href="login.php">Login</a>
+		<a href="register.php">Inregistrare</a>
+		<a href="login.php">Autentificare</a>
 	</div>
 
 <div id="contentwrapper">
@@ -111,57 +111,28 @@ Pentru mai multe detalii despre alte castiguri accesati urmatoarea
 
 
 <div id="rightcolumnTitle">
-Menu
+Meniu
 </div>
 
 <div id="menu">
 
+
 <ul>
-<li><?php echo "<a href='index_PHP.php'>Home</a>";?></li>
-<li><?php echo "<a href='stats.php'>Stats</a>";?></li>
-<li><?php echo "<a href='line-up_team.php'>Team Line-up</a>";?></li>
-<li><?php echo "<a href='bets.php'>Bets</a>";?></li>
-<li><?php echo "<a href='add_player.php'>Add player</a>";?></li>
-<li><?php echo "<a href='add_team.php'>Add team</a>";?></li>
-<li><?php echo "<a href='delete_team.php'>Delete team</a>";?></li>
-<li><?php echo "<a href='view_player.php'>View player</a>";?></li>
-<li><?php echo "<a href='modify_player.php'>Modify player</a>";?></li>
-<li><?php echo "<a href='delete_player.php'>Delete player</a>";?></li>
-<li><?php echo "<a href='contact.php'>Contact</a>";?></li>
+<li><?php echo "<a href='index_PHP_ro.php'>Acasa</a>";?></li>
+<li><?php echo "<a href='stats_ro.php'>Statistici</a>";?></li>
+<li><?php echo "<a href='line-up_team_ro.php'>Echipa de start</a>";?></li>
+<li><?php echo "<a href='bets_ro.php'>Pariuri</a>";?></li>
+<li><?php echo "<a href='add_player_ro.php'>Adauga jucator</a>";?></li>
+<li><?php echo "<a href='add_team_ro.php'>Adauga echipa</a>";?></li>
+<li><?php echo "<a href='delete_team_ro.php'>Sterge echipa</a>";?></li>
+<li><?php echo "<a href='view_player_ro.php'>Vezi jucator</a>";?></li>
+<li><?php echo "<a href='modify_player_ro.php'>Modifica date jucator</a>";?></li>
+<li><?php echo "<a href='delete_player_ro.php'>Sterge jucator</a>";?></li>
+<li><?php echo "<a href='contact_ro.php'>Contact</a>";?></li>
 </ul>
 
 </div>
-<!--
-<p>
-<strong>Last match:</strong><br />
-Your Team - Team 2:0
-</p>
 
-<p>
-<strong>Next match:</strong><br />
-Team - Your Team
-</p>
-
-<ul id="table">
-<li class="head1">League</li>
-<li class="pos head2">Pos</li>
-<li class="team head2">Team</li>
-<li class="pts head2">Pts</li>
-<li class="pos">1.</li>
-<li class="team">Team 1</li>
-<li class="pts">9</li>
-<li class="pos own">2.</li>
-<li class="team own">Your Team</li>
-<li class="pts own">6</li>
-<li class="pos">3.</li>
-<li class="team">Team 3</li>
-<li class="pts">1</li>
-<li class="pos">4.</li>
-<li class="team">Team 4</li>
-<li class="pts">1</li>
-
-</ul>
--->
 <div style="clear: both;"></div>
 
 </div>

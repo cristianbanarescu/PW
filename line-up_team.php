@@ -32,7 +32,6 @@
 </div>
 
 
-
  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>jQuery UI Sortable - Connect lists</title>
@@ -85,29 +84,6 @@
 
 </ul>
  
- 
-
-<!--
-<p>text1</p>
-
-<div class="blockquoteTitle">
-<h4>Blockquote</h4>
-</div>
-
-<blockquote>
-<p>text2</p>
-
-</blockquote>
-
-<!--<p><a href="#sitename">Read more...</a></p>
-
-<h2>Headline</h2>
-
-<p>text3</p>
-
-<h3>Headline</h3>
-<p>text4</p>
--->
 </div>
 
 </div>
@@ -115,18 +91,6 @@
 
 <div id="imagecolumn">
 
-<!--<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
-<img src="images/image.png" width="100" height="75" alt="Image" />
--->
 </div>
 
 <div id="rightcolumnTitle">
@@ -150,37 +114,7 @@ Menu
 </ul>
 
 </div>
-<!--
-<p>
-<strong>Last match:</strong><br />
-Your Team - Team 2:0
-</p>
 
-<p>
-<strong>Next match:</strong><br />
-Team - Your Team
-</p>
-
-<ul id="table">
-<li class="head1">League</li>
-<li class="pos head2">Pos</li>
-<li class="team head2">Team</li>
-<li class="pts head2">Pts</li>
-<li class="pos">1.</li>
-<li class="team">Team 1</li>
-<li class="pts">9</li>
-<li class="pos own">2.</li>
-<li class="team own">Your Team</li>
-<li class="pts own">6</li>
-<li class="pos">3.</li>
-<li class="team">Team 3</li>
-<li class="pts">1</li>
-<li class="pos">4.</li>
-<li class="team">Team 4</li>
-<li class="pts">1</li>
-
-</ul>
--->
 <div style="clear: both;"></div>
 
 </div>

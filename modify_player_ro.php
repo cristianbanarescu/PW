@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>
-    Modify player
+    Modifica jucator
   </title>
 
   <link rel="stylesheet" type="text/css" href="style.css" media="screen" >
@@ -11,8 +11,8 @@
 <div id="maincontainer">
 
 <div class="login_links">
-    <a href="register.php">Register</a>
-    <a href="login.php">Login</a>
+    <a href="register.php">Inregistrare</a>
+    <a href="login.php">Autentificare</a>
   </div>
   
 <div id="contentwrapper">
@@ -26,7 +26,7 @@
 
 <div id="header">
 </br>
-<h1>Modify player</h1>
+<h1>Modifica jucator</h1>
 </div>
 </br>
 </br>
@@ -74,23 +74,23 @@ if(!empty($_POST["form_update"]))
 </div>
 
 <div id="rightcolumnTitle">
-Menu
+Meniu
 </div>
 
 <div id="menu">
 
 <ul>
-<li><?php echo "<a href='index_PHP.php'>Home</a>";?></li>
-<li><?php echo "<a href='stats.php'>Stats</a>";?></li>
-<li><?php echo "<a href='line-up_team.php'>Team line-up</a>";?></li>
-<li><?php echo "<a href='bets.php'>Bets</a>";?></li>
-<li><?php echo "<a href='add_player.php'>Add player</a>";?></li>
-<li><?php echo "<a href='add_team.php'>Add team</a>";?></li>
-<li><?php echo "<a href='delete_team.php'>Delete team</a>";?></li>
-<li><?php echo "<a href='view_player.php'>View player</a>";?></li>
-<li><?php echo "<a href='modify_player.php'>Modify player</a>";?></li>
-<li><?php echo "<a href='delete_player.php'>Delete player</a>";?></li>
-<li><?php echo "<a href='contact.php'>Contact</a>";?></li>
+<li><?php echo "<a href='index_PHP_ro.php'>Acasa</a>";?></li>
+<li><?php echo "<a href='stats_ro.php'>Statistici</a>";?></li>
+<li><?php echo "<a href='line-up_team_ro.php'>Echipa de start</a>";?></li>
+<li><?php echo "<a href='bets_ro.php'>Pariuri</a>";?></li>
+<li><?php echo "<a href='add_player_ro.php'>Adauga jucator</a>";?></li>
+<li><?php echo "<a href='add_team_ro.php'>Adauga echipa</a>";?></li>
+<li><?php echo "<a href='delete_team_ro.php'>Sterge echipa</a>";?></li>
+<li><?php echo "<a href='view_player_ro.php'>Vezi jucator</a>";?></li>
+<li><?php echo "<a href='modify_player_ro.php'>Modifica date jucator</a>";?></li>
+<li><?php echo "<a href='delete_player_ro.php'>Sterge jucator</a>";?></li>
+<li><?php echo "<a href='contact_ro.php'>Contact</a>";?></li>
 </ul>
 
 </div>

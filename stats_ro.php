@@ -51,11 +51,26 @@
 </br>
 </br>
 
+</div>
+<div class="row">
+  <div >
+    <img  id="img_madrid" onclick="openModal(0)" src="img/realmadrid.jpg" style="width:10%" >
+  </div>
+</br>
 
 
+  <div  >
+    <img id="img_barca" onclick="openModal(1)" src="img/barcelona.jpg" style="width:10%" >
+  </div>
 
+  </br>
+
+  <div  >
+    <img id="img_manutd" onclick="openModal(2)" src="img/manutd.jpg" style="width:10%" >
+  </div>
 
 </div>
+
 
 </div>
 <div id="rightcolumn">
@@ -90,23 +105,7 @@ Meniu
 
 <div style="clear: both;"></div>
 
-</div>
-<div class="row">
-  <div >
-    <img  id="img_madrid" onclick="openModal(0)" src="img/realmadrid.jpg" style="width:10%" >
-  </div>
-</br>
 
-
-  <div  >
-    <img id="img_barca" onclick="openModal(1)" src="img/barcelona.jpg" style="width:10%" >
-  </div>
-
-  </br>
-
-  <div  >
-    <img id="img_manutd" onclick="openModal(2)" src="img/manutd.jpg" style="width:10%" >
-  </div>
 
 
 

@@ -35,16 +35,6 @@
 <h1>Home</h1>
 </div>
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
 </div>
 
 </div>

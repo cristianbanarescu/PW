@@ -14,8 +14,8 @@
 
 <div id="maincontainer">
 	<div class="login_links">
-		<a href="register.php">Register</a>
-		<a href="login.php">Login</a>
+		<a href="register.php">Inregistrare</a>
+		<a href="login.php">Autentificare</a>
 	</div>
 	
 
@@ -33,15 +33,6 @@
 <h1>Home</h1>
 </div>
 
-
-
-<br/>
-</br>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 
 </div>
 

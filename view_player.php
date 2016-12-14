@@ -1,24 +1,34 @@
+<!DOCTYPE html>
 <html>
 <head>
-	
+  <title>
+    View Player
+  </title>
 
-<title>
-View Player
-</title>
-
-
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" >
 </head>
 
-<body>
-<p>
-aici se vizualizeaza jucatori
+<div id="maincontainer">
 
-</br>
-</br>
+<div class="login_links">
+    <a href="register.php">Register</a>
+    <a href="login.php">Login</a>
+  </div>
+  
+<div id="contentwrapper">
 
-</br>
+<div id="contentcolumn">
 
-<h2> <font color = "fa1f1f" >AICI SE AFISEAZA jucatorii de la echipa selectata</font></h2>
+<div class=language_buttons>
+    <button class ="buttons" id="button_en" style="margin-left: 37px;" onclick="location.href='view_player.php'"><img id="image" src="img/england.jpg"> </button>
+    <button class ="buttons" id="button_ro" onclick="location.href='view_player_ro.php'"><img id="image" src="img/romania.png"> </button>
+  </div>
+
+<div id="header">
+</br>
+<h1>View Player</h1>
+</div>
+</br>
 </br>
 
 <?php 
@@ -46,7 +56,7 @@ $select1='<form action="" method="post"> <select name="select1">';
 $select1.='<option >'."---".'</option>';
 while($rs1=mysqli_fetch_array($sql1)){
       $select1.='<option >'.$rs1['nume_echipa'].'</option>';
-  	}
+    }
 }
 
 $query = "SELECT * FROM jucatori.`player` INNER JOIN laravellogin.users   
@@ -68,18 +78,54 @@ echo "</br>";
 echo "</br>";  
 
 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
-	if($row["nume_echipa"]==$selected_val){
-		printf("nume_jucator: %s  --- varsta : %d  --- goluri_marcate: %d ", $row["nume_jucator"],$row["varsta"],$row["goluri_marcate"]);
-		printf("</br>");  
-			}
+  if($row["nume_echipa"]==$selected_val){
+    printf("nume_jucator: %s  --- varsta : %d  --- goluri_marcate: %d ", $row["nume_jucator"],$row["varsta"],$row["goluri_marcate"]);
+    printf("</br>");  
+      }
           }
 
           mysqli_close($link_players);
           mysqli_close($link);
 ?>
+ 
+</div>
 
-</p>
-          
+</div>
+<div id="rightcolumn">
+
+<div id="imagecolumn">
+
+</div>
+
+<div id="rightcolumnTitle">
+Menu
+</div>
+
+<div id="menu">
+
+<ul>
+<li><?php echo "<a href='index_PHP.php'>Home</a>";?></li>
+<li><?php echo "<a href='stats.php'>Stats</a>";?></li>
+<li><?php echo "<a href='line-up_team.php'>Team line-up</a>";?></li>
+<li><?php echo "<a href='bets.php'>Bets</a>";?></li>
+<li><?php echo "<a href='add_player.php'>Add player</a>";?></li>
+<li><?php echo "<a href='add_team.php'>Add team</a>";?></li>
+<li><?php echo "<a href='delete_team.php'>Delete team</a>";?></li>
+<li><?php echo "<a href='view_player.php'>View player</a>";?></li>
+<li><?php echo "<a href='modify_player.php'>Modify player</a>";?></li>
+<li><?php echo "<a href='delete_player.php'>Delete player</a>";?></li>
+<li><?php echo "<a href='contact.php'>Contact</a>";?></li>
+</ul>
+
+</div>
+
+<div style="clear: both;"></div>
+
+</div>
+
+<div id="push"></div>
+
+</div>
+
 </body>
-
 </html>

@@ -1,4 +1,4 @@
-<html> 	
+l<html> 	
 
 <head>
 
@@ -50,6 +50,26 @@
 </br>
 
 </div>
+
+<div >
+    <img  id="img_madrid" onclick="openModal(0)" src="img/realmadrid.jpg" style="width:10%" >
+  </div>
+</br>
+
+
+  <div  >
+    <img id="img_barca" onclick="openModal(1)" src="img/barcelona.jpg" style="width:10%" >
+  </div>
+
+  </br>
+
+  <div  >
+    <img id="img_manutd" onclick="openModal(2)" src="img/manutd.jpg" style="width:10%" >
+  </div>
+  
+
+
+
 
 </div>
 <div id="rightcolumn">
@@ -118,21 +138,6 @@ Team - Your Team
 
 </div>
 
-  <div >
-    <img  id="img_madrid" onclick="openModal(0)" src="img/realmadrid.jpg" style="width:10%" >
-  </div>
-</br>
-
-
-  <div  >
-    <img id="img_barca" onclick="openModal(1)" src="img/barcelona.jpg" style="width:10%" >
-  </div>
-
-  </br>
-
-  <div  >
-    <img id="img_manutd" onclick="openModal(2)" src="img/manutd.jpg" style="width:10%" >
-  </div>
   
 
 
