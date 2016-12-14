@@ -95,31 +95,8 @@ mysqli_close($link_players);
 <div id="header">
 </br>
 <h1>Home</h1>
-<!--<span>Beginnings...</span>
---></div>
-
-
-
-
-<!--
-<div class="blockquoteTitle">
-<h4>Blockquote</h4>
 </div>
 
-<blockquote>
-<p>text2</p>
-
-</blockquote>
-
-<!--<p><a href="#sitename">Read more...</a></p>
--
-<h2>Headline</h2>
-
-<p>text3</p>
-
-<h3>Headline</h3>
-<p>text4</p>
--->
 
 
 <br/>
@@ -198,64 +175,7 @@ mysqli_close($link);
 
 
 ?>
-</br>
-Selectati echipa pe care doriti sa o stergeti :
-<br/>
-<?php 
 
-$link10= mysqli_connect("localhost","root","","laravellogin");
-if (!$link10) {
-    echo "Error: Unable to connect to MySQL." . PHP_EOL;
-    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
-    exit;
-}
-
-$link_update= mysqli_connect("localhost","root","","jucatori");
-if (!$link_update) {
-    echo "Error: Unable to connect to MySQL." . PHP_EOL;
-    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
-    exit;
-}
-
-$sql10=mysqli_query($link10,'SELECT nume_echipa FROM users');
-if(mysqli_num_rows($sql10)){
-$select_sterg='<form action="" method="post"> <select name="select_sterg">';
-$select_sterg.='<option >'."---".'</option>';
-while($rs10=mysqli_fetch_array($sql10)){
-      $select_sterg.='<option >'.$rs10['nume_echipa'].'</option>';
-  	}
-}
-$select_sterg.='</select>';
-$select_sterg.='<input type="submit" name="sterge" value="DELETE TEAM" />
-</form>';
-
-
-
-echo $select_sterg;
-	if(!empty($_POST["sterge"]))
-	{
-		$var= $_POST['select_sterg'];
-		$delete = "DELETE FROM `users` WHERE `nume_echipa`='$var'";
-
-			if (!mysqli_query($link10,$delete)) {
-		    	  echo "Error deleting record: " . $link->error;
-					}
-
-		$var_update  = "UPDATE player SET nume_echipa='liber_contract' WHERE nume_echipa='$var'";
-		if(!mysqli_query($link_update,$var_update))
-		{
-			echo "eroare update team NULL";
-		}
-
-
-	}
-
-
-mysqli_close($link10);	
-
-?>
 
 </br>
 
@@ -292,43 +212,14 @@ Meniu
 <li><?php echo "<a href='bets_ro.php'>Pariuri</a>";?></li>
 <li><?php echo "<a href='add_player_ro.php'>Adauga jucator</a>";?></li>
 <li><?php echo "<a href='add_team_ro.php'>Adauga echipa</a>";?></li>
+<li><?php echo "<a href='delete_team_ro.php'>Sterge echipa</a>";?></li>
 <li><?php echo "<a href='view_player_ro.php'>Vezi jucator</a>";?></li>
 <li><?php echo "<a href='modify_player_ro.php'>Modifica date jucator</a>";?></li>
 <li><?php echo "<a href='contact_ro.php'>Contact</a>";?></li>
 </ul>
 
 </div>
-<!--
-<p>
-<strong>Last match:</strong><br />
-Your Team - Team 2:0
-</p>
 
-<p>
-<strong>Next match:</strong><br />
-Team - Your Team
-</p>
-
-<ul id="table">
-<li class="head1">League</li>
-<li class="pos head2">Pos</li>
-<li class="team head2">Team</li>
-<li class="pts head2">Pts</li>
-<li class="pos">1.</li>
-<li class="team">Team 1</li>
-<li class="pts">9</li>
-<li class="pos own">2.</li>
-<li class="team own">Your Team</li>
-<li class="pts own">6</li>
-<li class="pos">3.</li>
-<li class="team">Team 3</li>
-<li class="pts">1</li>
-<li class="pos">4.</li>
-<li class="team">Team 4</li>
-<li class="pts">1</li>
-
-</ul>
--->
 <div style="clear: both;"></div>
 
 </div>

@@ -123,6 +123,7 @@ Menu
 <li><?php echo "<a href='bets.php'>Bets</a>";?></li>
 <li><?php echo "<a href='add_player.php'>Add player</a>";?></li>
 <li><?php echo "<a href='add_team.php'>Add team</a>";?></li>
+<li><?php echo "<a href='delete_team.php'>Delete team</a>";?></li>
 <li><?php echo "<a href='view_player.php'>View player</a>";?></li>
 <li><?php echo "<a href='modify_player.php'>Modify player</a>";?></li>
 <li><?php echo "<a href='contact.php'>Contact</a>";?></li>
