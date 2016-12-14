@@ -61,10 +61,13 @@ echo $select_sterg;
 
 
 	}
+	
 
 
 mysqli_close($link10);	
 
+
+echo "<a href='index_PHP.php'>Go Home</a>";
 ?>
 </body>
 </html>

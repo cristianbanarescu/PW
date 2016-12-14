@@ -45,6 +45,9 @@
 </div>
 
 
+</br>
+</br>
+</br>
 
 </div>
 
@@ -72,6 +75,7 @@ Menu
 <li><?php echo "<a href='delete_team.php'>Delete team</a>";?></li>
 <li><?php echo "<a href='view_player.php'>View player</a>";?></li>
 <li><?php echo "<a href='modify_player.php'>Modify player</a>";?></li>
+<li><?php echo "<a href='delete_player.php'>Delete player</a>";?></li>
 <li><?php echo "<a href='contact.php'>Contact</a>";?></li>
 </ul>
 
@@ -109,6 +113,7 @@ Team - Your Team
 
 </ul>
 -->
+
 <div style="clear: both;"></div>
 
 </div>

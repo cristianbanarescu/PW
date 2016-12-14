@@ -41,7 +41,7 @@ $select2.='</select>';
 
 <h2> <font color="fa1f1f">AICI SE CREEAZA JUCATORI si se adauga la echipa selectata </font></h2>
 <br/>
-<form method="post"  action="add_player.php">
+<form method="post"  >
 Nume echipa:<?php echo $select2; ?></br>
 Nume jucator : <input type="text" name="nume_jucator"><br>
 Varsta : <input type="text" name="varsta"><br>

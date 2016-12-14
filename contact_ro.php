@@ -131,6 +131,7 @@ Meniu
 <li><?php echo "<a href='delete_team_ro.php'>Sterge echipa</a>";?></li>
 <li><?php echo "<a href='view_player_ro.php'>Vezi jucator</a>";?></li>
 <li><?php echo "<a href='modify_player_ro.php'>Modifica date jucator</a>";?></li>
+<li><?php echo "<a href='delete_player_ro.php'>Sterge jucator</a>";?></li>
 <li><?php echo "<a href='contact_ro.php'>Contact</a>";?></li>
 </ul>
 
