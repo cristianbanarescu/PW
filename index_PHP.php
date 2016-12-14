@@ -120,7 +120,7 @@ mysqli_close($link_players);
 <h3>Headline</h3>
 <p>text4</p>
 -->
-<h2> <font color="fa1f1f">AICI SE CREEAZA CHESTII(CREATE) </font></h2>
+<h2> <font color="fa1f1f">AICI SE CREEAZA JUCATORI si se adauga la echipa selectata </font></h2>
 <br/>
 <form method="post" action="index_PHP.php">
 Nume echipa:<?php echo $select2; ?></br>
@@ -173,33 +173,41 @@ Nume echipa:<input type="text" name="nume_echipa"></br>
 if(!empty($_POST["form_create2"]))
 {
 
-	$link= mysqli_connect("localhost","root","","laravellogin");
-	if (!$link) {
+	$link_addTeam= mysqli_connect("localhost","root","","laravellogin");
+	if (!$link_addTeam) {
 	    echo "Error: Unable to connect to MySQL." . PHP_EOL;
 	    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
 	    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
 	    exit;
 	}
 
-	$link->select_db("laravellogin");
+	$link_addTeam->select_db("laravellogin");
 
-	$var_numeEchipa = $_POST["nume_echipa"];
+	//$var_numeEchipa = $_POST["nume_echipa"];
 
+	//echo "$var_numeEchipa </br>";
 
-	 $query = "INSERT INTO `users` (`id`, `nume_echipa`, `username`, `password`, `createDate`) VALUES (NULL, '$var_numeEchipa',
+	if($_POST["nume_echipa"]!=NULL)
+	{
+			$var_numeEchipa=$_POST["nume_echipa"];
+			$query_addTeam= "INSERT INTO `users` (`nume_echipa`, `username`, `password`, `createDate`) VALUES ('$var_numeEchipa',
 	  NULL, NULL, CURRENT_TIMESTAMP);";
 
-	  $var_numeEchipa=NULL;
+	  		if(!mysqli_query($link_addTeam,$query_addTeam))
+				echo "eroare";	
+	}
+	
+	
+		
 
-	if(!mysqli_query($link,$query))
-		echo "eroare";
-
-	mysqli_close($link);
+	$_POST["nume_echipa"]=array();
+	
+	mysqli_close($link_addTeam);
 }
 
 ?>
 <br/>
-<h2> <font color = "fa1f1f" >AICI SE AFISEAZA CHESTII(READ)</font></h2>
+<h2> <font color = "fa1f1f" >AICI SE AFISEAZA jucatorii de la echipa selectata</font></h2>
 <br/>
 <?php 
 $link= mysqli_connect("localhost","root","","laravellogin");
@@ -246,7 +254,7 @@ while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 <br/>
 
 
-<h2> <font color="fa1f1f">AICI SE MODIFICA CHESTII(UPDATE)</font></h2>
+<h2> <font color="fa1f1f">AICI SE MODIFICA informatiile despre jucatori</font></h2>
 </br>
 <b> Aici vom modifica parola pentru fiecare user din baza noastra de date </b>
 </br>
@@ -254,8 +262,6 @@ while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 
 <form method="post" action="">
 Nume jucator : <input type="text" name="nume_jucator"><br>
-Nume echipa: <input type="text" name="nume_echipa"><br>
-Varsta: <input type="text" name="varsta"><br>
 Goluri marcate : <input type="text" name="goluri_marcate"><br>
 <input type="submit" name="form_update" >
 </form>
@@ -283,7 +289,7 @@ if(!empty($_POST["form_update"]))
 	$var_goluriMarcate = $_POST["goluri_marcate"];
 
 	
-	$update = "UPDATE player  SET nume_echipa='$var_numeEchipa', goluri_marcate='$var_goluriMarcate', varsta='$var_varsta' WHERE nume_jucator='$var_numeJucator'";
+	$update = "UPDATE player  SET goluri_marcate='$var_goluriMarcate' WHERE nume_jucator='$var_numeJucator'";
 		if (!mysqli_query($link, $update)) {
 		    echo "Error updating record: " . mysqli_error($link);
 		}
@@ -293,7 +299,7 @@ if(!empty($_POST["form_update"]))
 ?>
 <br/>
 
-<h2> <font color = "fa1f1f" >AICI SE STERG CHESTII(DELETE)</font></h2>
+<h2> <font color = "fa1f1f" >AICI SE STERG un jucator de la o echipa selectata sau o echipa </font></h2>
 </br>
 Selectati playerul pe care doriti sa il stergeti :
 <br/>
