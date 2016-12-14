@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script>
+        function setPlayers(value) {            //functia asta adauga in al doilea select elementul selectat din primul select
+            var select = document.getElementById("2");
+            var options = select.options;
+
+            //aici se poate scrie cod php ca si in html si sa punem intr-un vector datele sau chiar direct
+            //si apoi sa le adaugam ca si mai jos
+            options[options.length] = new Option(value);
+        }
+    </script>
+</head>
+<body>
+    <select id="1" onchange="setPlayers(this.value)">
+        <option disabled selected value="">--</option>
+        <option>a</option>
+        <option>b</option>
+    </select>
+
+    <select id="2">
+        <option disabled selected value="">--</option>
+       
+    </select>
+</body>
+
+    
+</html>
