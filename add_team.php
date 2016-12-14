@@ -26,14 +26,14 @@
 
 <div id="header">
 </br>
-<h1>Add player</h1>
+<h1>Add Team</h1>
 </div>
 </br>
 </br>
 
 <br/>
 <form method="post" action="">
-Nume echipa:<input type="text" name="nume_echipa"></br>
+Team name:<input type="text" name="nume_echipa"></br>
 <input type="submit"  name ="form_create2">
 </form>
 
@@ -51,10 +51,6 @@ if(!empty($_POST["form_create2"]))
 
 	$link_addTeam->select_db("laravellogin");
 
-	//$var_numeEchipa = $_POST["nume_echipa"];
-
-	//echo "$var_numeEchipa </br>";
-
 	if($_POST["nume_echipa"]!=NULL)
 	{
 			$var_numeEchipa=$_POST["nume_echipa"];
@@ -62,17 +58,10 @@ if(!empty($_POST["form_create2"]))
 	  NULL, NULL, CURRENT_TIMESTAMP);";
 
 	  		if(!mysqli_query($link_addTeam,$query_addTeam))
-				echo "eroare";	
+				echo "<script type='text/javascript'>alert('Error adding team');</script>";
+			else
+				echo "<script type='text/javascript'>alert('Team added');</script>";
 	}
-	
-	
-		
-
-	$_POST["nume_echipa"]=array();
-	header("location: index_PHP.php");
-	exit;
-
-	
 	mysqli_close($link_addTeam);
 }
 

@@ -50,6 +50,7 @@ if(mysqli_num_rows($sql2)){
 $select2='<form action="" method="post"> <select name="select2">';
 $select2.='<option >'."---".'</option>';
 while($rs2=mysqli_fetch_array($sql2)){
+	if($rs2['nume_echipa'] != NULL)
       $select2.='<option >'.$rs2['nume_echipa'].'</option>';
   	}
 }
@@ -93,10 +94,10 @@ if(!empty($_POST["form_create"]))
 	  '$var_nume_jucator', '$var_varsta', '$var_goluri_marcate');";
 
 	if(!mysqli_query($link,$query))
-		echo "eroare";
+		echo "<script type='text/javascript'>alert('Eroare adaugare jucator');</script>";
+	else
+		echo "<script type='text/javascript'>alert('Jucator adaugat');</script>";
 
-	header("location: index_PHP.php");
-	exit;
 
 	mysqli_close($link);
 }

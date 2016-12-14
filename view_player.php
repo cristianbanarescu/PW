@@ -26,7 +26,7 @@
 
 <div id="header">
 </br>
-<h1>View Player</h1>
+<h1>View Players</h1>
 </div>
 </br>
 </br>
@@ -55,6 +55,7 @@ if(mysqli_num_rows($sql1)){
 $select1='<form action="" method="post"> <select name="select1">';
 $select1.='<option >'."---".'</option>';
 while($rs1=mysqli_fetch_array($sql1)){
+  if($rs1['nume_echipa'] != NULL)
       $select1.='<option >'.$rs1['nume_echipa'].'</option>';
     }
 }
@@ -79,7 +80,7 @@ echo "</br>";
 
 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
   if($row["nume_echipa"]==$selected_val){
-    printf("nume_jucator: %s  --- varsta : %d  --- goluri_marcate: %d ", $row["nume_jucator"],$row["varsta"],$row["goluri_marcate"]);
+    printf("Player name: %s -  Age: %d  -  Goals scored: %d ", $row["nume_jucator"],$row["varsta"],$row["goluri_marcate"]);
     printf("</br>");  
       }
           }

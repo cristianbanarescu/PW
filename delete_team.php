@@ -54,6 +54,7 @@ if(mysqli_num_rows($sql10)){
 $select_sterg='<form action="" method="post"> <select name="select_sterg">';
 $select_sterg.='<option >'."---".'</option>';
 while($rs10=mysqli_fetch_array($sql10)){
+	if($rs10['nume_echipa'] != NULL)
       $select_sterg.='<option >'.$rs10['nume_echipa'].'</option>';
   	}
 }
@@ -73,21 +74,15 @@ echo $select_sterg;
 		    	  echo "Error deleting record: " . $link->error;
 					}
 
-		$var_update  = "UPDATE player SET nume_echipa='liber_contract' WHERE nume_echipa='$var'";
+		$var_update  = "UPDATE player SET nume_echipa='Liber de contract' WHERE nume_echipa='$var'";
 		if(!mysqli_query($link_update,$var_update))
-		{
-			echo "eroare update team NULL";
-		}
-
+			echo "<script type='text/javascript'>alert('Error deleting team');</script>";
+		else
+			echo "<script type='text/javascript'>alert('Team deleted');</script>";
 
 	}
-	
-
 
 mysqli_close($link10);	
-
-
-echo "<a href='index_PHP.php'>Go Home</a>";
 ?>
  
 </div>

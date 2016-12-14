@@ -62,17 +62,11 @@ if(!empty($_POST["form_create2"]))
 	  NULL, NULL, CURRENT_TIMESTAMP);";
 
 	  		if(!mysqli_query($link_addTeam,$query_addTeam))
-				echo "eroare";	
+				echo "<script type='text/javascript'>alert('Eroare adaugare echipa');</script>";
+			else
+				echo "<script type='text/javascript'>alert('Echipa adaugata');</script>";
 	}
-	
-	
 		
-
-	$_POST["nume_echipa"]=array();
-	header("location: index_PHP.php");
-	exit;
-
-	
 	mysqli_close($link_addTeam);
 }
 

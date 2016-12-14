@@ -4,7 +4,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 
-<title>Football Players</title>
+<title>Jucatori de fotbal</title>
 
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" >
 
@@ -30,7 +30,7 @@
 
 <div id="header">
 </br>
-<h1>Home</h1>
+<h1>Bine ati venit</h1>
 </div>
 
 

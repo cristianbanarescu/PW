@@ -57,9 +57,12 @@ if(!empty($_POST["form_update"]))
 
 	
 	$update = "UPDATE player  SET goluri_marcate='$var_goluriMarcate' WHERE nume_jucator='$var_numeJucator'";
-		if (!mysqli_query($link, $update)) {
-		    echo "Error updating record: " . mysqli_error($link);
-		}
+		if (!mysqli_query($link, $update)) 
+		    echo "<script type='text/javascript'>alert('Eroare modificare jucator');</script>";
+		else
+			echo "<script type='text/javascript'>alert('Jucator modificat');</script>";
+
+		
 	
 }
 

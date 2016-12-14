@@ -50,6 +50,7 @@ if(mysqli_num_rows($sql2)){
 $select2='<form action="" method="post"> <select name="select2">';
 $select2.='<option >'."---".'</option>';
 while($rs2=mysqli_fetch_array($sql2)){
+	if($rs2['nume_echipa'] != NULL)
       $select2.='<option >'.$rs2['nume_echipa'].'</option>';
   	}
 }
@@ -58,10 +59,10 @@ $select2.='</select>';
 
 <br/>
 <form method="post"  >
-Nume echipa:<?php echo $select2; ?></br>
-Nume jucator : <input type="text" name="nume_jucator"><br>
-Varsta : <input type="text" name="varsta"><br>
-Goluri marcate : <input type="text" name="goluri_marcate"><br>
+Team name:<?php echo $select2; ?></br>
+Player name: <input type="text" name="nume_jucator"><br>
+Age: <input type="text" name="varsta"><br>
+Goals scored: <input type="text" name="goluri_marcate"><br>
 <input type="submit"  name ="form_create" onlcik="reset()";>
 </form>
 <br/>
@@ -82,8 +83,6 @@ if(!empty($_POST["form_create"]))
 	$link->select_db("jucatori");
 
 
-
-
 	$selected_val2 = $_POST["select2"];
 	$var_nume_jucator = $_POST["nume_jucator"];
 	$var_varsta = $_POST["varsta"];
@@ -93,10 +92,9 @@ if(!empty($_POST["form_create"]))
 	  '$var_nume_jucator', '$var_varsta', '$var_goluri_marcate');";
 
 	if(!mysqli_query($link,$query))
-		echo "eroare";
-
-	header("location: index_PHP.php");
-	exit;
+		echo "<script type='text/javascript'>alert('Error adding player');</script>";
+	else
+		echo "<script type='text/javascript'>alert('Player added');</script>";
 
 	mysqli_close($link);
 }
