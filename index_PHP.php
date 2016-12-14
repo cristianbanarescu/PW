@@ -32,9 +32,36 @@
 
 <div id="header">
 </br>
-<h1>Welcome</h1>
+<h1>Home</h1>
 </div>
 
+
+
+
+<h2 align="center">
+</br>
+</br>
+</br>
+Welcome to our page !!
+</h2>
+</br>
+</br>
+
+<p>
+<b>
+Enjoy your time here !!
+</b>
+<img src="img/giphy.gif" style="width:569px;height:271px;">
+<br>
+</br>
+<img src="img/giphy3.gif" style="width:569px;height:271px;">
+<br></br>
+<b>You have made a great choice  !!</b>
+
+</br>
+<img src="img/giphy5.gif" style="width:569px;height:271px;">
+</br>
+</p>
 </div>
 
 </div>
@@ -52,7 +79,7 @@ Menu
 <ul>
 <li><?php echo "<a href='index_PHP.php'>Home</a>";?></li>
 <li><?php echo "<a href='stats.php'>Stats</a>";?></li>
-<!--<li><?php echo "<a href='line-up_team.php'>Team Line-up</a>";?></li>-->
+<li><?php echo "<a href='line-up_team.php'>Team Line-up</a>";?></li>
 <li><?php echo "<a href='bets.php'>Bets</a>";?></li>
 <li><?php echo "<a href='add_player.php'>Add player</a>";?></li>
 <li><?php echo "<a href='add_team.php'>Add team</a>";?></li>

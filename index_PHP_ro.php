@@ -4,7 +4,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 
-<title>Jucatori de fotbal</title>
+<title>Football Players</title>
 
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" >
 
@@ -30,14 +30,38 @@
 
 <div id="header">
 </br>
-<h1>Bine ati venit</h1>
+<h1>Acasa</h1>
 </div>
 
+<h2 align="center">
+</br>
+</br>
+</br>
+Bine ai venit pe pagina noastra !!
+</h2>
+</br>
+</br>
 
+<p>
+<b>
+Bucura-te de timpul petrecut pe site-ul nostru!
+</b>
+<img src="img/giphy.gif" style="width:569px;height:271px;">
+<br>
+</br>
+<img src="img/giphy3.gif" style="width:569px;height:271px;">
+<br></br>
+<b>Ai facut o  alegere buna !</b>
+
+</br>
+<img src="img/giphy5.gif" style="width:569px;height:271px;">
+</br>
+</p>
 </div>
 
 </div>
 <div id="rightcolumn">
+
 
 
 <div id="rightcolumnTitle">
@@ -50,7 +74,7 @@ Meniu
 <ul>
 <li><?php echo "<a href='index_PHP_ro.php'>Acasa</a>";?></li>
 <li><?php echo "<a href='stats_ro.php'>Statistici</a>";?></li>
-<!--<li><?php echo "<a href='line-up_team_ro.php'>Echipa de start</a>";?></li>-->
+<li><?php echo "<a href='line-up_team_ro.php'>Echipa de start</a>";?></li>
 <li><?php echo "<a href='bets_ro.php'>Pariuri</a>";?></li>
 <li><?php echo "<a href='add_player_ro.php'>Adauga jucator</a>";?></li>
 <li><?php echo "<a href='add_team_ro.php'>Adauga echipa</a>";?></li>
