@@ -33,10 +33,52 @@
 <form method="post" action="">
 		Username : <input type="text" name="username"><br>
 		Password : <input type="password" name="password"><br>
-		<input type="submit"  name ="form_create">
+		<input type="submit"  name ="form_login">
 	</form>
  
- 
+ <?php
+if(!empty($_POST["form_login"]))
+{
+
+	$link_login= mysqli_connect("localhost","root","","laravellogin");
+	if (!$link_login) {
+	    echo "Error: Unable to connect to MySQL." . PHP_EOL;
+	    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
+	    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
+	    exit;
+	}
+
+	$link_login->select_db("laravellogin");
+
+	if(($_POST["username"]!=NULL) && ($_POST["password"]!=NULL) )
+	{
+			$var_username=$_POST["username"];
+			$var_password=$_POST["password"];
+
+			$query_username= "SELECT * FROM  `users` WHERE `username`='$var_username' ";
+	  		if(!mysqli_query($link_login,$query_username))
+				echo "<script type='text/javascript'>alert('Error finding user');</script>";
+			
+			$query_pass= "SELECT * FROM `users` WHERE `password`='$var_password'";
+			if(!mysqli_query($link_login,$query_pass))
+				echo "<script type='text/javascript'>alert('Error finding user');</script>";
+			
+	}
+
+	$result = mysqli_query($link_login,$query_username);
+	$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+
+	$result_pass = mysqli_query($link_login,$query_pass);
+	$row_pass=mysqli_fetch_array($result_pass, MYSQLI_ASSOC);
+
+	if($row_pass["password"]==$var_password)
+		echo "Te-ai conectat cu user-ul : ".$row["username"];
+	else 
+		echo "parola gresita/user gresit ";
+	mysqli_close($link_login);
+}
+
+?>
 </div>
 
 </div>
