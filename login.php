@@ -71,7 +71,7 @@ if(!empty($_POST["form_login"]))
 	$result_pass = mysqli_query($link_login,$query_pass);
 	$row_pass=mysqli_fetch_array($result_pass, MYSQLI_ASSOC);
 
-	if($row_pass["password"]==$var_password)
+	if(($row_pass["password"]==$var_password) && ($row["username"]==$var_username) )
 		echo "Te-ai conectat cu user-ul : ".$row["username"];
 	else 
 		echo "parola gresita/user gresit ";

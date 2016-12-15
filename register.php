@@ -49,11 +49,20 @@ if(!empty($_POST["form_register"]))
 
 	$var_username = $_POST["username"];
 	$var_password = $_POST["password"];
+	$var_rep_pass= $_POST["rep_password"];
 		
+		if($var_password==$var_rep_pass){
 	 $query = "INSERT INTO `users` (`nume_echipa`, `username`, `password`, `createDate`) VALUES (NULL, '$var_username', '$var_password', CURRENT_TIMESTAMP);";
-	 
-	if(!mysqli_query($link,$query))
+
+	 	if(!mysqli_query($link,$query))
 		echo "<script type='text/javascript'>alert('eroare add');</script>";	
+
+		else echo "inregistrare cu succes!";
+
+	}
+
+	else echo "nu ati introdus aceeasi parola in campurile de parola !";
+	 
 	//else
 	//	echo "<script type='text/javascript'>alert('Player added');</script>";
 
