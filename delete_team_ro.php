@@ -68,20 +68,22 @@ echo $select_sterg;
 	if(!empty($_POST["sterge"]))
 	{
 		$var= $_POST['select_sterg'];
-		$delete = "DELETE FROM `users` WHERE `nume_echipa`='$var'";
+		//$delete = "DELETE FROM `users` WHERE `nume_echipa`='$var'";
 
-			if (!mysqli_query($link10,$delete)) {
+		$update_liber="UPDATE users SET nume_echipa='Liber de contract' WHERE nume_echipa='$var'";
+		
+			if (!mysqli_query($link10,$update_liber)) {
 		    	  echo "Error deleting record: " . $link->error;
 					}
 
 		$var_update  = "UPDATE player SET nume_echipa='Liber de contract' WHERE nume_echipa='$var'";
+		//$var_update_users = "INSERT INTO `users` (`nume_echipa`, `username`, `password`, `createDate`) VALUES ('Liber de contract',  	  NULL, NULL, CURRENT_TIMESTAMP);";
 		if(!mysqli_query($link_update,$var_update))
-			echo "<script type='text/javascript'>alert('Eroare stergere echipa');</script>";
-			else
-				echo "<script type='text/javascript'>alert('Echipa stearsa');</script>";
+			echo "<script type='text/javascript'>alert('Error deleting team');</script>";
+		else
+			echo "<script type='text/javascript'>alert('Team deleted');</script>";
 
 	}
-	
 
 mysqli_close($link10);	
 ?>
