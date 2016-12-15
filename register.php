@@ -27,10 +27,10 @@
 </br>
 </br>
 </br>
-<form method="post">
+<form method="post" >
 		Username : <input type="text" name="username"><br>
-		Password : <input type="text" name="password"><br>
-		Repeat Password : <input type="text" name="rep_password"><br>
+		Password : <input type="password" name="password"><br>
+		Repeat Password : <input type="password" name="rep_password"><br>
 		<input type="submit"  name ="form_register">
 	</form>
 
@@ -49,15 +49,18 @@ if(!empty($_POST["form_register"]))
 
 	$var_username = $_POST["username"];
 	$var_password = $_POST["password"];
-	
+		
 	 $query = "INSERT INTO `users` (`nume_echipa`, `username`, `password`, `createDate`) VALUES (NULL, '$var_username', '$var_password', CURRENT_TIMESTAMP);";
 	 
 	if(!mysqli_query($link,$query))
-		echo "eroare";	
-	else
-		echo "User added";
+		echo "<script type='text/javascript'>alert('eroare add');</script>";	
+	//else
+	//	echo "<script type='text/javascript'>alert('Player added');</script>";
+
+	
 
 	mysqli_close($link);
+
 }
 ?>	
 
